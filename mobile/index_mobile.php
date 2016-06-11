@@ -1,6 +1,6 @@
 <?php
 //head
-include_once 'header_mobile.html';
+include_once 'mobile/header_mobile.html';
 ?>
 
 <!-- Body -->
