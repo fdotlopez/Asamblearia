@@ -1,0 +1,178 @@
+.flex-box, header .menu ul {
+  -webkit-display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.article_common, section article, aside {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  min-height: 90px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px; }
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: #e72a64; }
+  header div:first-of-type {
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/asamblearia.svg);
+    background-repeat: no-repeat;
+    background-position: center 5px;
+    background-size: 60%;
+    float: left; }
+  header .menu {
+    width: 3rem;
+    height: 3rem;
+    background-image: url("../img/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: 5px;
+    float: right;
+    margin-right: 20px; }
+    header .menu ul {
+      position: fixed;
+      top: 50px;
+      left: 0px;
+      width: 100%;
+      height: 50px;
+      background-color: #aaa;
+      z-index: 10000; }
+  header .profile {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/esplai.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: 5px;
+    margin-right: 10px;
+    float: right;
+    border-radius: 40px;
+    background-color: white; }
+
+body {
+  background-color: #f5f5f5; }
+
+.side_menu {
+  position: fixed;
+  left: 0px;
+  top: 50px;
+  width: 20%;
+  height: 100%;
+  padding: 90px 20px 20px 20px;
+  box-sizing: padding-box;
+  background-color: #f5f5f5;
+  z-index: -1000; }
+  .side_menu h3 {
+    font-size: 1.125rem;
+    font-weight: 700; }
+  .side_menu ul {
+    margin-top: 20px; }
+  .side_menu li {
+    padding: 20px 0px;
+    border-top: 1px #aaa solid;
+    box-sizing: padding-box;
+    color: #999; }
+    .side_menu li a {
+      color: inherit;
+      text-decoration: inherit; }
+    .side_menu li a:hover {
+      color: MidnightBlue; }
+    .side_menu li a:focus {
+      font-weight: 400; }
+    .side_menu li a:active {
+      color: MidnightBlue;
+      font-weight: 700; }
+  .side_menu h6 {
+    width: 100%;
+    font-weight: 300; }
+  .side_menu h6 span, .side_menu h5 span {
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../img/chevron.svg);
+    background-repeat: no-repeat;
+    background-position: center -2px;
+    background-size: contain;
+    float: right;
+    margin-left: 10px; }
+  .side_menu .ir_a_reuniones {
+    position: absolute;
+    top: 85%;
+    padding: 20px 0px;
+    width: 100%;
+    text-align: left; }
+
+main {
+  margin-left: 20%;
+  margin-top: 50px;
+  padding: 80px 20px 20px 20px;
+  box-sizing: border-box; }
+
+h2 {
+  font-size: 3rem;
+  width: 100%;
+  margin: auto auto 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15); }
+
+section {
+  width: 60.2%;
+  float: left; }
+  section article a {
+    text-decoration: none; }
+  section article h4 {
+    width: 85%;
+    float: left;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: #333; }
+    section article h4 strong {
+      font-weight: 700; }
+  section article p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: #aaa; }
+
+aside {
+  float: right;
+  width: 38%;
+  margin-top: 0px;
+  min-height: 80px; }
+
+.logo1 {
+  width: 4rem;
+  height: 4rem;
+  background-image: url(../img/bubble.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  margin-right: 20px; }
+
+.logo2 {
+  width: 4rem;
+  height: 4rem;
+  background-image: url(../img/add.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  margin-right: 20px; }
+
+.gmail_api_headtext {
+  font-weight: 700; }
+
+/*# sourceMappingURL=common.css.map */
