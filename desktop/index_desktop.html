@@ -13,6 +13,10 @@
           });
         });
 
+        $('.profile').click(function(){
+          $('.profile ul').fadeToggle();
+        });
+
       });
     </script>
   </head>
@@ -32,8 +36,9 @@
       </nav>
       <div class="profile">
         <ul>
-          <li>Cambiar Comunidad</li>
-          <li>Cerrar Sesión</li>
+          <li><a href="">Cambiar comunidad</a></li>
+          <li><a href="">Ajustar perfil para esta comunidad</a></li>
+          <li><a href="">Cerrar sesión</a></li>
         </ul>
       </div>
     </header>
@@ -73,6 +78,10 @@
         </li>
       </ul>
       <a class="ir_a_reuniones" href="#">Ver mis reuniones<span></span></a>
+    </nav>
+
+    <nav id="third_menu">
+      
     </nav>
 
     <main>
