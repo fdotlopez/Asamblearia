@@ -38,7 +38,7 @@ q:before, q:after {
   content: "";
   content: none; }
 
-.flex-box, header .menu ul {
+.flex-box, header .menu .wrap_menu ul, .context {
   -webkit-display: flex;
   display: flex;
   flex-direction: row;
@@ -77,26 +77,63 @@ header {
     margin-top: 5px;
     float: right;
     margin-right: 20px; }
-    header .menu ul {
+    header .menu .wrap_menu {
+      display: none;
       position: fixed;
       top: 50px;
       left: 0px;
       width: 100%;
-      height: 50px;
-      background-color: #aaa;
-      z-index: 10000; }
+      height: auto;
+      padding-right: 20px;
+      box-sizing: padding-box;
+      background-color: #e72a64;
+      z-index: 10000;
+      overflow: hidden; }
+      header .menu .wrap_menu ul {
+        width: 100%;
+        padding: 20px 0px;
+        box-sizing: padding-box;
+        justify-content: flex-end; }
+        header .menu .wrap_menu ul .submenu_item a {
+          margin-left: 60px;
+          color: #fff;
+          font-size: 1rem;
+          font-weight: 400;
+          text-decoration: none; }
+        header .menu .wrap_menu ul .submenu_item a:hover {
+          text-decoration: underline; }
   header .profile {
-    width: 40px;
-    height: 40px;
-    background-image: url("../img/esplai.jpg");
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/wwf.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-right: 10px;
     float: right;
-    border-radius: 40px;
+    border-radius: 30px;
     background-color: white; }
+
+.context {
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  width: 77.3%;
+  height: 50px;
+  z-index: -1;
+  background-color: #f5f5f5;
+  padding: 20px 20px 10px 20px; }
+  .context li {
+    display: none;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-top: 1px solid #aaa;
+    color: #aaa; }
+  .context #first_step {
+    border-top: 2px solid #e72a64;
+    color: #000; }
 
 body {
   background-color: #f5f5f5; }
@@ -125,16 +162,12 @@ body {
       color: inherit;
       text-decoration: inherit; }
     .side_menu li a:hover {
+      text-decoration: underline;
       color: #e72a64; }
-    .side_menu li a:focus {
-      font-weight: 400; }
-    .side_menu li a:active {
-      color: MidnightBlue;
-      font-weight: 700; }
   .side_menu h6 {
     width: 100%;
     font-weight: 300; }
-  .side_menu h6 span, .side_menu h5 span {
+  .side_menu h6 span, .side_menu h5 span, .side_menu .ir_a_reuniones span {
     width: 2rem;
     height: 2rem;
     background-image: url(../img/chevron.svg);
@@ -145,9 +178,9 @@ body {
     margin-left: 10px; }
   .side_menu .ir_a_reuniones {
     position: absolute;
-    top: 85%;
+    top: 80%;
     padding: 20px 0px;
-    width: 100%;
+    width: 87.5%;
     text-align: left; }
 
 main {
@@ -160,11 +193,8 @@ h2 {
   font-size: 3rem;
   width: 100%;
   margin: auto auto 20px auto;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: white;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15); }
+  padding: 0px 20px 10px 20px;
+  box-sizing: border-box; }
 
 section {
   width: 60.2%;

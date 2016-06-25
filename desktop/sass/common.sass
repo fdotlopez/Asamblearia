@@ -13,6 +13,13 @@
   background-position: center
   background-size: contain
 
+=translate($X, $Y)
+  -webkit-transform: translate($X, $Y)
+  -moz-transform: translate($X, $Y)
+  -ms-transform: translate($X, $Y)
+  -o-transform: translate($X, $Y)
+  transform: translate($X, $Y)
+
 //Color variables
 $menuprincipal: #e72a64
 $textColor: #333
@@ -53,30 +60,71 @@ header
     float: right
     margin-right: 20px
 
-    ul
+    .wrap_menu
+      display: none
       position: fixed
       top: 50px
       left: 0px
       width: 100%
-      height: 50px
-      @extend .flex-box
-      background-color: #aaa
+      height: auto
+      padding-right: 20px
+      box-sizing: padding-box
+      background-color: $menuprincipal
       z-index: 10000
+      overflow: hidden
 
-      li
+      ul
+        width: 100%
+        padding: 20px 0px
+        box-sizing: padding-box
+        @extend .flex-box
+        justify-content: flex-end
+
+        .submenu_item a
+          margin-left: 60px
+          color: #fff
+          font-size: 1rem
+          font-weight: 400
+          text-decoration: none
+
+        .submenu_item a:hover
+          text-decoration: underline
 
 
   .profile
-    width: 40px
-    height: 40px
-    +background_image('../img/esplai.jpg')
-    margin-top: 5px
+    width: 30px
+    height: 30px
+    +background_image('../img/wwf.jpg')
+    margin-top: 10px
     margin-right: 10px
     float: right
-    border-radius: 40px
+    border-radius: 30px
     background-color: white
 
 
+
+.context
+  position: fixed
+  top: 50px
+  right: 0px
+  width: 77.3%
+  height: 50px
+  z-index: -1
+  @extend .flex-box
+  background-color: $backgroundcolor
+  padding: 20px 20px 10px 20px
+
+  li
+    display: none
+    width: 25%
+    padding: 10px
+    box-sizing: border-box
+    border-top: 1px solid #aaa
+    color: #aaa
+
+  #first_step
+    border-top: 2px solid $menuprincipal
+    color: #000
 
 
 body
@@ -111,20 +159,14 @@ body
       text-decoration: inherit
 
     a:hover
+      text-decoration: underline
       color: $menuprincipal
-
-    a:focus
-      font-weight: 400
-
-    a:active
-      color: MidnightBlue
-      font-weight: 700
 
   h6
     width: 100%
     font-weight: 300
 
-  h6 span, h5 span
+  h6 span, h5 span, .ir_a_reuniones span
     width: 2rem
     height: 2rem
     background-image: url(../img/chevron.svg)
@@ -136,9 +178,9 @@ body
 
   .ir_a_reuniones
     position: absolute
-    top: 85%
+    top: 80%
     padding: 20px 0px
-    width: 100%
+    width: 87.5%
     text-align: left
 
 main
@@ -151,11 +193,8 @@ h2
   font-size: 3rem
   width: 100%
   margin: auto auto 20px auto
-  padding: 20px
+  padding: 0px 20px 10px 20px
   box-sizing: border-box
-  background-color: white
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15)
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15)
 
 section
   width: 60.2%

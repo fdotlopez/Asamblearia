@@ -3,27 +3,54 @@
     <title>Asamblearia</title>
     <link rel="stylesheet" type='text/css' href="desktop/css/master_desktop.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $('.menu').click(function(){
+          $('.wrap_menu').animate({
+            height: 'toggle'
+          });
+        });
+
+      });
+    </script>
   </head>
   <body>
     <header>
       <div></div>
       <nav class="menu">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <div class="wrap_menu">
+          <ul>
+            <li class="submenu_item"><a href="#">Ayuda</a></li>
+            <li class="submenu_item"><a href="#">FAQ</a></li>
+            <li class="submenu_item"><a href="#">Ampliar Servicio</a></li>
+            <li class="submenu_item"><a href="#">Protección de datos</a></li>
+            <li class="submenu_item"><a href="#">Condiciones Legales</a></li>
+          </ul>
+        </div>
       </nav>
-      <div class="profile"></div>
+      <div class="profile">
+        <ul>
+          <li>Cambiar Comunidad</li>
+          <li>Cerrar Sesión</li>
+        </ul>
+      </div>
     </header>
+
+    <ul class="context">
+      <li id="first_step">Propuesta de temas</li>
+      <li id="second_step">Debate Previo</li>
+      <li id="third_step">Reunión</li>
+      <li id="fourth_step">Acta</li>
+    </ul>
 
     <nav class="side_menu">
       <h3>Reunión Trimestral II</h3>
       <ul>
         <li>
           <a href="#">
-            <h5>Últimas noticias <span></span></h5>
+            <h5>Últimas Noticias<span></span></h5>
           </a>
         </li>
         <li>
