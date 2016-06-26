@@ -13,6 +13,15 @@
   background-position: center
   background-size: contain
 
+
+//Animate mixin
+=animate($time)
+  -webkit-transition: all $time cubic-bezier(0.42,0,0.58,1)
+  -moz-transition: all $time cubic-bezier(0.42,0,0.58,1)
+  -ms-transition: all $time cubic-bezier(0.42,0,0.58,1)
+  -o-transition: all $time cubic-bezier(0.42,0,0.58,1)
+  transition: all $time cubic-bezier(0.42,0,0.58,1)
+
 =translate($X, $Y)
   -webkit-transform: translate($X, $Y)
   -moz-transform: translate($X, $Y)
@@ -31,7 +40,6 @@ $backgroundcolor: #f5f5f5
   padding: 20px
   box-sizing: border-box
   background-color: white
-  min-height: 90px
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15)
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15)
   margin-bottom: 20px
@@ -154,13 +162,13 @@ body
 .side_menu
   position: fixed
   left: 0px
-  top: 50px
+  top: 120px
   width: 20%
   height: 100%
-  padding: 90px 20px 20px 20px
+  padding: 20px 20px 20px 20px
   box-sizing: padding-box
   background-color: $backgroundcolor
-  z-index: -1000
+  z-index: 1
 
   h3
     font-size: 1.125rem
@@ -199,26 +207,30 @@ body
 
   .ir_a_reuniones
     position: absolute
-    top: 80%
+    top: 70%
     padding: 20px 0px
     width: 87.5%
     text-align: left
+    text-decoration: none
 
-.third_menu
-  position: absolute
-  top: 50px
-  left: 20%
+#third_menu
+  position: fixed
+  top: 120px
+  left: 00%
   width: 20%
   height: 100%
-  padding: 90px 20px 20px 20px
+  padding: 20px 20px 20px 20px
   box-sizing: padding-box
-  z-index: -1000
+  background-color: white
+  z-index: 0
+  +animate(0.3s)
 
 main
   margin-left: 20%
   margin-top: 50px
   padding: 80px 20px 20px 20px
   box-sizing: border-box
+  +animate(0.3s)
 
 h2
   font-size: 3rem
@@ -233,13 +245,35 @@ section
 
   article
     @extend .article_common
+    @extend .flex-box
+    justify-content: flex-start
+
+    .logo1
+      width: 4rem
+      height: 4rem
+      background-image: url(../img/bubble.svg)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: contain
+      margin-right: 20px
+
+    .logo2
+      width: 4rem
+      height: 4rem
+      background-image: url(../img/add.svg)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: contain
+      margin-right: 20px
 
     a
       text-decoration: none
 
+    a:hover
+      text-decoration: underline
+
     h4
-      width: 85%
-      float: left
+      width: 100%
       font-size: 1.25rem
       line-height: 1.5rem
       font-weight: 300
@@ -248,11 +282,12 @@ section
       strong
         font-weight: 700
 
-    p
-      font-size: 1rem
-      font-weight: 300
-      text-decoration: none
-      color: $textColor_notification
+      span
+        display: block
+        font-size: 1rem
+        font-weight: 300
+        text-decoration: none
+        color: $textColor_notification
 
 aside
   float: right
@@ -260,28 +295,8 @@ aside
   margin-top: 0px
 
   article
-  @extend .article_common
-  min-height: 80px
-
-.logo1
-  width: 4rem
-  height: 4rem
-  background-image: url(../img/bubble.svg)
-  background-repeat: no-repeat
-  background-position: center
-  background-size: contain
-  float: left
-  margin-right: 20px
-
-.logo2
-  width: 4rem
-  height: 4rem
-  background-image: url(../img/add.svg)
-  background-repeat: no-repeat
-  background-position: center
-  background-size: contain
-  float: left
-  margin-right: 20px
+    @extend .article_common
+    min-height: 80px
 
 .gmail_api_headtext
   font-weight: 700

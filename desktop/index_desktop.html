@@ -17,6 +17,34 @@
           $('.profile ul').fadeToggle();
         });
 
+        var secondmenu = true;
+
+        $('#issue1').click(function(e){
+          e.preventDefault();
+          if(secondmenu==true){
+            $('#third_menu').css({
+              'left':'20%',
+            });
+            $('main').css({
+              'margin-left':'40%'
+            });
+            secondmenu = false;
+          }
+        });
+
+        $('#issue0').click(function(e){
+          e.preventDefault();
+          if(secondmenu==false){
+            $('#third_menu').css({
+              'left':'0%'
+            });
+            $('main').css({
+              'margin-left':'20%'
+            });
+            secondmenu=true;
+          }
+        });
+
       });
     </script>
   </head>
@@ -54,12 +82,12 @@
       <h3>Reunión Trimestral II</h3>
       <ul>
         <li>
-          <a href="#">
+          <a id="issue0" href="#">
             <h5>Últimas Noticias<span></span></h5>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a id="issue1" href="#">
             <h5>Aspectos a mejorar</h5>
             <h6>Proponed temas a debatir sobre cosas que creáis necesarias comentar<span></span></h6>
           </a>
@@ -81,31 +109,28 @@
     </nav>
 
     <nav id="third_menu">
-      
+
     </nav>
 
     <main>
       <h2>Que ha pasado mientras no estabas</h2>
       <section>
-        <article class="">
+        <article>
+          <div class="logo1"></div>
           <a href="#">
-            <svg class="logo1"></svg>
-            <h4>Tienes 5 temas por decidir antes de la <strong>Reunión Trimestral II </strong>.</h4>
-            <p>hace 3 horas</p>
+            <h4>Tienes 5 temas por decidir antes de la <strong>Reunión Trimestral II</strong>.<span>hace 3 horas</span></h4>
           </a>
         </article>
-        <article class="">
+        <article>
+          <div class="logo2"></div>
           <a href="#">
-            <svg class="logo2"></svg>
-            <h4>Tu propuesta ha generado debate. Esto es lo que se opina sobre <strong>'Habitatge per joves'</strong></h4>
-            <p>hace 5 horas</p>
+            <h4>Tu propuesta ha generado debate. Esto es lo que se opina sobre <strong>'Habitatge per joves'</strong>.<span>hace 5 horas</span></h4>
           </a>
         </article>
-        <article class="">
+        <article>
+          <div class="logo2"></div>
           <a href="#">
-            <svg class="logo2"></svg>
-            <h4>Añade una propuest a la <strong>Reunión Trimestral II </strong>.</h4>
-            <p>hace más de 1 día</p>
+            <h4>Añade una propuesta a la reunión <strong>Reunión II</strong>. <span>hace 16 horas</span></h4>
           </a>
         </article>
       </section>
