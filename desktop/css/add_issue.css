@@ -1,0 +1,105 @@
+.article_common {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px; }
+
+.introtext, #add_issue_section aside form input[type=text], #add_issue_section aside form textarea {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #000;
+  font-family: "Lato", sans-serif; }
+
+.calltoaction, #add_issue_section aside form input[type=submit] {
+  background-color: #e72a64;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 1px solid #e72a64;
+  padding: 10px 20px;
+  box-sizing: padding-box;
+  display: block;
+  cursor: pointer;
+  letter-spacing: 0.1rem; }
+
+#add_issue_section article {
+  display: block; }
+  #add_issue_section article h4 {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: #333; }
+  #add_issue_section article h5 {
+    width: 100%;
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: #333; }
+    #add_issue_section article h5 span {
+      display: block;
+      font-size: 1rem;
+      font-weight: 300;
+      text-decoration: none;
+      color: #aaa; }
+    #add_issue_section article h5 strong {
+      font-weight: 400; }
+#add_issue_section aside h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px; }
+#add_issue_section aside form {
+  width: 100%;
+  -moz-placeholder-font-family: "Lato", sans-serif;
+  -moz-placeholder-color: #bbb;
+  -moz-placeholder-font-size: inherit;
+  -moz-placeholder-font-weight: 300;
+  -ms-input-placeholder-font-family: "Lato", sans-serif;
+  -ms-input-placeholder-color: #bbb;
+  -ms-input-placeholder-font-size: inherit;
+  -ms-input-placeholder-font-weight: 300; }
+  #add_issue_section aside form label {
+    font-size: 1.15rem;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 5px; }
+  #add_issue_section aside form input[type=text] {
+    padding: 5px 5px 5px 5px;
+    width: 80%;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #333; }
+  #add_issue_section aside form textarea {
+    font-family: "Lato", sans-serif;
+    width: 80%;
+    padding: 5px 5px 0px 5px;
+    height: 30px;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: 300; }
+  #add_issue_section aside form input[type=submit] {
+    margin-bottom: 10px;
+    -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
+  #add_issue_section aside form input[type=submit]:hover {
+    background-color: #fff;
+    color: #e72a64;
+    border: 1px solid #e72a64; }
+  #add_issue_section aside form ::-webkit-input-placeholder {
+    font-family: "Lato", sans-serif;
+    color: #bbb;
+    font-size: inherit;
+    font-weight: 300; }
+  #add_issue_section aside form ::-moz-placeholder {
+    font-family: "Lato", sans-serif;
+    color: #bbb;
+    font-size: inherit;
+    font-weight: 300; }
+
+/*# sourceMappingURL=add_issue.css.map */

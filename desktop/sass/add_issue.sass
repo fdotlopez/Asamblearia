@@ -1,0 +1,76 @@
+@import 'common'
+
+#add_issue_section
+
+  article
+    display: block
+
+    h4
+      width: 100%
+      font-size: 1.5rem
+      line-height: 1.8rem
+      font-weight: 400
+      color: $textColor
+
+    h5
+      width: 100%
+      font-size: 1.15rem
+      line-height: 1.5rem
+      font-weight: 300
+      color: $textColor
+
+      span
+        display: block
+        font-size: 1rem
+        font-weight: 300
+        text-decoration: none
+        color: $textColor_notification
+
+      strong
+        font-weight: 400
+
+  aside
+
+    h3
+      font-size: 1.5rem
+      margin-bottom: 20px
+
+    form
+      width: 100%
+
+      label
+        font-size: 1.15rem
+        font-weight: 300
+        display: block
+        margin-bottom: 5px
+
+      input[type=text]
+        @extend .introtext
+        padding: 5px 5px 5px 5px
+        width: 80%
+        display: block
+        margin-bottom: 20px
+        font-size: 1rem
+        color: #333
+
+      textarea
+        @extend .introtext
+        font-family: 'Lato', sans-serif
+        width: 80%
+        padding: 5px 5px 0px 5px
+        height: 30px
+        margin-bottom: 40px
+        color: #333
+        font-weight: 300
+
+      input[type=submit]
+        @extend .calltoaction
+        margin-bottom: 10px
+        +animate(0.3s)
+
+      input[type=submit]:hover
+        background-color: #fff
+        color: $menuprincipal
+        border: 1px solid $menuprincipal
+
+      +placeholders(#bbb, inherit, 300)

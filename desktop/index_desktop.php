@@ -31,9 +31,6 @@
             });
             $('.context li').fadeToggle();
             secondmenu = false;
-            $('main h2').text('Aspectos a Mejorar');
-            $('main h3').fadeToggle();
-            $('main h3').text('Proponed temas a debatir sobre cosas que creáis necesarias mejorar');
           }
         });
 
@@ -123,9 +120,8 @@
       </ul>
     </nav>
 
-    <main>
+    <main id="main_ultimas_noticias">
       <h2>Que ha pasado mientras no estabas</h2>
-      <h3></h3>
       <section>
         <article>
           <div class="logo1"></div>
@@ -155,6 +151,8 @@
         </article>
       </aside>
     </main>
+
+    <?php include_once 'debate_prev.html' ?>
 
   </body>
 </html>
