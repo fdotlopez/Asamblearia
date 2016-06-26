@@ -38,7 +38,7 @@ q:before, q:after {
   content: "";
   content: none; }
 
-.article_common, section article, aside article {
+.article_common, section article, aside article, #main_debate section article {
   padding: 20px;
   box-sizing: border-box;
   background-color: white;
@@ -262,6 +262,9 @@ body {
       color: #e72a64;
       font-weight: 700; }
 
+#main_ultimas_noticias {
+  opacity: 1; }
+
 main {
   margin-left: 20%;
   margin-top: 50px;
@@ -345,7 +348,38 @@ aside {
 .gmail_api_headtext {
   font-weight: 700; }
 
-.article_common, section article, aside article {
+/* --------- Comentarios --------- */
+#main_debate {
+  display: none; }
+  #main_debate section {
+    width: 65%;
+    float: left;
+    -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
+    #main_debate section article {
+      -webkit-display: flex;
+      display: flex;
+      flex-direction: row;
+      justify-content: "flex-start"; }
+      #main_debate section article h4 {
+        width: 100%;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        font-weight: 300;
+        color: #333; }
+        #main_debate section article h4 strong {
+          font-weight: 700; }
+        #main_debate section article h4 span {
+          display: block;
+          font-size: 1rem;
+          font-weight: 300;
+          text-decoration: none;
+          color: #aaa; }
+
+.article_common, section article, aside article, #main_debate section article {
   padding: 20px;
   box-sizing: border-box;
   background-color: white;

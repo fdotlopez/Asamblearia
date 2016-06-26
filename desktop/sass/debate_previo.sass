@@ -211,6 +211,9 @@ body
       color: $menuprincipal
       font-weight: 700
 
+#main_ultimas_noticias
+  opacity: 1
+
 main
   margin-left: 20%
   margin-top: 50px
@@ -295,3 +298,35 @@ aside
 
 .gmail_api_headtext
   font-weight: 700
+
+
+/* --------- Comentarios --------- */
+
+#main_debate
+  display: none
+
+  section
+    width: 65%
+    float: left
+    +animate(0.3s)
+
+    article
+      @extend .article_common
+      +flex('flex-start')
+
+      h4
+        width: 100%
+        font-size: 1.25rem
+        line-height: 1.5rem
+        font-weight: 300
+        color: $textColor
+
+        strong
+          font-weight: 700
+
+        span
+          display: block
+          font-size: 1rem
+          font-weight: 300
+          text-decoration: none
+          color: $textColor_notification
