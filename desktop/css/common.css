@@ -133,7 +133,7 @@ body {
     margin-top: 20px; }
   .side_menu li {
     padding: 20px 0px;
-    border-top: 1px #aaa solid;
+    border-top: 1px #bbb solid;
     box-sizing: padding-box;
     color: #999; }
     .side_menu li a {
@@ -142,6 +142,9 @@ body {
     .side_menu li a:hover {
       text-decoration: underline;
       color: #e72a64; }
+    .side_menu li a:focus {
+      color: #e72a64;
+      font-weight: 700; }
   .side_menu h6 {
     width: 100%;
     font-weight: 300; }
@@ -170,13 +173,33 @@ body {
   height: 100%;
   padding: 20px 20px 20px 20px;
   box-sizing: padding-box;
-  background-color: white;
   z-index: 0;
+  opacity: 0;
   -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
   -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
   -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
+  #third_menu ul {
+    margin-top: 40px; }
+  #third_menu li {
+    padding: 20px 0px;
+    border-top: 1px #aaa solid;
+    box-sizing: padding-box;
+    color: #999; }
+    #third_menu li a {
+      color: inherit;
+      text-decoration: inherit; }
+      #third_menu li a h6 {
+        font-size: 0.9rem;
+        width: 100%;
+        font-weight: 300; }
+    #third_menu li a:hover {
+      text-decoration: underline;
+      color: #e72a64; }
+    #third_menu li a:focus {
+      color: #e72a64;
+      font-weight: 700; }
 
 main {
   margin-left: 20%;

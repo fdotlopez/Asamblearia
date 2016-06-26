@@ -24,10 +24,12 @@
           if(secondmenu==true){
             $('#third_menu').css({
               'left':'20%',
+              'opacity': '1'
             });
             $('main').css({
-              'margin-left':'40%'
+              'margin-left':'40%',
             });
+            $('.context li').fadeToggle();
             secondmenu = false;
           }
         });
@@ -36,11 +38,13 @@
           e.preventDefault();
           if(secondmenu==false){
             $('#third_menu').css({
-              'left':'0%'
+              'left':'0%',
+              'opacity': '0'
             });
             $('main').css({
               'margin-left':'20%'
             });
+            $('.context li').fadeToggle();
             secondmenu=true;
           }
         });
@@ -109,7 +113,11 @@
     </nav>
 
     <nav id="third_menu">
-
+      <ul>
+        <li><a href="#"><h6>Actividades de excursionismo mejor organizadas</h6></a></li>
+        <li><a href="#"><h6>Reuniones con los padres mensuales y no trimestrales</h6></a></li>
+        <li><a href="#"><h6>Coordinación con los monitores de otros grupos</h6></a></li>
+      </ul>
     </nav>
 
     <main>

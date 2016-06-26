@@ -179,7 +179,7 @@ body
 
   li
     padding: 20px 0px
-    border-top: 1px #aaa solid
+    border-top: 1px #bbb solid
     box-sizing: padding-box
     color: #999
 
@@ -190,6 +190,10 @@ body
     a:hover
       text-decoration: underline
       color: $menuprincipal
+
+    a:focus
+      color: $menuprincipal
+      font-weight: 700
 
   h6
     width: 100%
@@ -221,9 +225,35 @@ body
   height: 100%
   padding: 20px 20px 20px 20px
   box-sizing: padding-box
-  background-color: white
   z-index: 0
+  opacity: 0
   +animate(0.3s)
+
+  ul
+    margin-top: 40px
+
+  li
+    padding: 20px 0px
+    border-top: 1px #aaa solid
+    box-sizing: padding-box
+    color: #999
+
+    a
+      color: inherit
+      text-decoration: inherit
+
+      h6
+        font-size: 0.9rem
+        width: 100%
+        font-weight: 300
+
+    a:hover
+      text-decoration: underline
+      color: $menuprincipal
+
+    a:focus
+      color: $menuprincipal
+      font-weight: 700
 
 main
   margin-left: 20%
