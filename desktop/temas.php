@@ -17,6 +17,18 @@
           $('.profile ul').fadeToggle();
         });
 
+        $('textarea').focus(function(){
+          $('textarea').css({
+            'height':'150px'
+          });
+        });
+
+        $('textarea').blur(function(){
+          $('textarea').css({
+            'height':'auto'
+          });
+        });
+
       });
     </script>
   </head>
@@ -48,15 +60,15 @@
       <h2>Puntos del día</h2>
       <h3 class="variable_second_title">Estos son los temas propuestos hasta ahora</h3>
       <section>
-        <article>
+        <article id="tema1">
           <h4>Aspectos a mejorar</h4>
           <h5>Hace tres meses se marcaron unos claros objetivos para el trimestre. Debemos proponer aspectos a mejorar que reflejen aquellas actividades del día a día que no han salido como estaba panificado o que podrían mejorarse.<span>hace 2 minutos</span></h5>
         </article>
-        <article>
+        <article id="tema2">
           <h4>¿Qué día celebramos la despedida?</h4>
           <h5>Dado que llega el final de curso, se celebrará la despedida de la temporada. ¿Cuando os va bien hacerla?<span>hace 3 horas</span></h5>
         </article>
-        <article>
+        <article id="tema3">
           <h4>Revisión de los objetivos de cada grupo con los monitores personales</h4>
           <h5>Cómo cada final de trimestre se hablará de los objetivos alcanzados y se valorará con el resto de grupo. <strong>Preparar presentación</strong>.<span>hace 1 día</span></h5>
         </article>

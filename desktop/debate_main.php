@@ -2,6 +2,7 @@
     <meta charset="utf-8">
     <title>Asamblearia</title>
     <link rel="stylesheet" type='text/css' href="desktop/css/master_desktop.css">
+    <link rel="stylesheet" type='text/css' href="css/master_desktop.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript">
@@ -31,6 +32,9 @@
             });
             $('.context li').fadeToggle();
             secondmenu = false;
+
+            $('#main_debate').show();
+            $('#main_ultimas_noticias').hide();
           }
         });
 

@@ -40,8 +40,8 @@
   font-size: 3rem;
   color: #e72a64;
   width: 100%;
-  margin: auto auto 20px auto;
-  padding: 0px 20px 10px 20px;
+  margin: auto auto 10px auto;
+  padding: 0px 20px 10px 0px;
   box-sizing: border-box; }
 
 .h3 {
@@ -50,7 +50,7 @@
   color: #e72a64;
   width: 100%;
   margin: auto auto 20px auto;
-  padding: 0px 20px 10px 20px;
+  padding: 0px 20px 10px 0px;
   box-sizing: border-box; }
 
 #add_issue_section .inactive-issue {
@@ -75,7 +75,8 @@
     font-size: 1.5rem;
     line-height: 1.8rem;
     font-weight: 400;
-    color: inherit; }
+    color: inherit;
+    margin-bottom: 5px; }
   #add_issue_section article h5 {
     width: 100%;
     font-size: 1.15rem;
@@ -122,7 +123,12 @@
     height: 30px;
     margin-bottom: 40px;
     color: #333;
-    font-weight: 300; }
+    font-weight: 300;
+    -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
   #add_issue_section aside form input[type=submit] {
     margin-bottom: 10px;
     -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);

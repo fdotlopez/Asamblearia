@@ -212,7 +212,7 @@ body
       font-weight: 700
 
 #main_ultimas_noticias
-  display: none
+  display: block
 
 main
   margin-left: 20%
@@ -298,15 +298,10 @@ aside
 /* --------- Comentarios --------- */
 
 #main_debate
-  display: block
+  display: none
 
   h2
-    font-size: 3rem
-    color: $menuprincipal
-    width: 100%
-    margin: auto auto 0px auto
-    padding: 0px 20px 10px 20px
-    box-sizing: border-box
+    @extend .h2
 
   h3
     @extend .h3

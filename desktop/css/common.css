@@ -39,8 +39,8 @@
   font-size: 3rem;
   color: #e72a64;
   width: 100%;
-  margin: auto auto 20px auto;
-  padding: 0px 20px 10px 20px;
+  margin: auto auto 10px auto;
+  padding: 0px 20px 10px 0px;
   box-sizing: border-box; }
 
 .h3 {
@@ -49,7 +49,7 @@
   color: #e72a64;
   width: 100%;
   margin: auto auto 20px auto;
-  padding: 0px 20px 10px 20px;
+  padding: 0px 20px 10px 0px;
   box-sizing: border-box; }
 
 /*# sourceMappingURL=common.css.map */

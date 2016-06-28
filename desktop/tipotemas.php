@@ -80,7 +80,7 @@
             </div>
             <div class="">
               <input type="radio" name="tipodetema" value="eliminar_tema">
-              <label for="eliminar_tema">No incluir tema en ninguna reunión</label>
+              <label for="eliminar_tema">Eliminar Tema</label>
             </div>
             <button>Adjuntar archivo</button>
             <input type="submit" name="preparartemas" value="Siguiente Tema">
