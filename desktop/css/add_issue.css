@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .article_common {
   padding: 20px;
   box-sizing: border-box;
@@ -25,20 +26,62 @@
   cursor: pointer;
   letter-spacing: 0.1rem; }
 
+.buttonslinks, #add_issue_section aside form button {
+  padding: 0px;
+  background-color: transparent;
+  border: 0px;
+  color: #3366FF;
+  cursor: pointer; }
+
+.buttonslinks:hover, #add_issue_section aside form button:hover {
+  text-decoration: underline; }
+
+.h2 {
+  font-size: 3rem;
+  color: #e72a64;
+  width: 100%;
+  margin: auto auto 20px auto;
+  padding: 0px 20px 10px 20px;
+  box-sizing: border-box; }
+
+.h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #e72a64;
+  width: 100%;
+  margin: auto auto 20px auto;
+  padding: 0px 20px 10px 20px;
+  box-sizing: border-box; }
+
+#add_issue_section .inactive-issue {
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px;
+  box-shadow: 0px 0px 0px;
+  color: #aaa;
+  cursor: pointer; }
+#add_issue_section .inactive-issue:hover {
+  color: #333; }
+#add_issue_section .active-issue {
+  color: #333; }
 #add_issue_section article {
-  display: block; }
+  display: block;
+  -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
   #add_issue_section article h4 {
     width: 100%;
     font-size: 1.5rem;
     line-height: 1.8rem;
     font-weight: 400;
-    color: #333; }
+    color: inherit; }
   #add_issue_section article h5 {
     width: 100%;
     font-size: 1.15rem;
     line-height: 1.5rem;
     font-weight: 300;
-    color: #333; }
+    color: inherit; }
     #add_issue_section article h5 span {
       display: block;
       font-size: 1rem;
@@ -101,5 +144,21 @@
     color: #bbb;
     font-size: inherit;
     font-weight: 300; }
+  #add_issue_section aside form div {
+    margin-bottom: 10px; }
+    #add_issue_section aside form div label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      padding-left: 10px; }
+    #add_issue_section aside form div input[type=radio] {
+      border-color: blue;
+      border-width: 2px; }
+    #add_issue_section aside form div input[type=radio]:checked {
+      content: "•";
+      color: green; }
+  #add_issue_section aside form button {
+    font-size: 1.15rem;
+    margin: 20px 0px; }
 
 /*# sourceMappingURL=add_issue.css.map */

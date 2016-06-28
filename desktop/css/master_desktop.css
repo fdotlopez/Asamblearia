@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
  * v2.0 | 20110126
  * License: none (public domain) */
@@ -38,7 +39,7 @@ q:before, q:after {
   content: "";
   content: none; }
 
-.article_common, section article, aside article, #main_debate section article {
+.article_common, section article, aside article, #main_debate article {
   padding: 20px;
   box-sizing: border-box;
   background-color: white;
@@ -64,6 +65,33 @@ q:before, q:after {
   display: block;
   cursor: pointer;
   letter-spacing: 0.1rem; }
+
+.buttonslinks, #main_debate article div button, #add_issue_section aside form button {
+  padding: 0px;
+  background-color: transparent;
+  border: 0px;
+  color: #3366FF;
+  cursor: pointer; }
+
+.buttonslinks:hover, #main_debate article div button:hover, #add_issue_section aside form button:hover {
+  text-decoration: underline; }
+
+.h2, main h2 {
+  font-size: 3rem;
+  color: #e72a64;
+  width: 100%;
+  margin: auto auto 20px auto;
+  padding: 0px 20px 10px 20px;
+  box-sizing: border-box; }
+
+.h3, #main_debate h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #e72a64;
+  width: 100%;
+  margin: auto auto 20px auto;
+  padding: 0px 20px 10px 20px;
+  box-sizing: border-box; }
 
 header {
   position: fixed;
@@ -170,7 +198,7 @@ header {
     box-sizing: border-box;
     border-top: 1px solid #aaa;
     color: #aaa; }
-  .context #first_step {
+  .context .active {
     border-top: 2px solid #e72a64;
     color: #000; }
 
@@ -263,7 +291,7 @@ body {
       font-weight: 700; }
 
 #main_ultimas_noticias {
-  opacity: 1; }
+  display: none; }
 
 main {
   margin-left: 20%;
@@ -275,13 +303,6 @@ main {
   -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
   -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
-  main h2 {
-    font-size: 3rem;
-    color: #e72a64;
-    width: 100%;
-    margin: auto auto 20px auto;
-    padding: 0px 20px 10px 20px;
-    box-sizing: border-box; }
   main .variable_second_title {
     font-size: 2rem;
     width: 100%;
@@ -350,36 +371,70 @@ aside {
 
 /* --------- Comentarios --------- */
 #main_debate {
-  display: none; }
-  #main_debate section {
-    width: 65%;
-    float: left;
-    -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-    -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
-    #main_debate section article {
+  display: block; }
+  #main_debate h2 {
+    font-size: 3rem;
+    color: #e72a64;
+    width: 100%;
+    margin: auto auto 0px auto;
+    padding: 0px 20px 10px 20px;
+    box-sizing: border-box; }
+  #main_debate article {
+    width: 100%; }
+    #main_debate article h4 {
+      width: 100%;
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      font-weight: 400;
+      color: #333; }
+    #main_debate article h5 {
+      width: 100%;
+      font-size: 1.15rem;
+      line-height: 1.5rem;
+      font-weight: 300;
+      color: #333; }
+    #main_debate article ul {
       -webkit-display: flex;
       display: flex;
       flex-direction: row;
-      justify-content: "flex-start"; }
-      #main_debate section article h4 {
+      justify-content: flex-start;
+      margin: 20px auto 20px auto; }
+      #main_debate article ul li {
+        width: auto;
+        margin-right: 40px;
+        color: #3366FF; }
+    #main_debate article h6 {
+      width: 100%;
+      font-size: 1.15rem;
+      line-height: 1.5rem;
+      font-weight: 400;
+      color: #333;
+      padding: 10px 0px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #000; }
+    #main_debate article div {
+      margin: 20px 0px 40px 0px; }
+      #main_debate article div h6 {
         width: 100%;
-        font-size: 1.25rem;
-        line-height: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 5px;
+        padding: 0px;
+        box-sizing: border-box;
+        border-bottom: 0px; }
+      #main_debate article div span {
+        color: #bbb;
         font-weight: 300;
-        color: #333; }
-        #main_debate section article h4 strong {
-          font-weight: 700; }
-        #main_debate section article h4 span {
-          display: block;
-          font-size: 1rem;
-          font-weight: 300;
-          text-decoration: none;
-          color: #aaa; }
+        margin-left: 10px; }
+      #main_debate article div p {
+        font-weight: 300;
+        margin-bottom: 10px; }
+      #main_debate article div button:hover {
+        text-decoration: underline; }
 
-.article_common, section article, aside article, #main_debate section article {
+.article_common, section article, aside article, #main_debate article {
   padding: 20px;
   box-sizing: border-box;
   background-color: white;
@@ -406,20 +461,62 @@ aside {
   cursor: pointer;
   letter-spacing: 0.1rem; }
 
+.buttonslinks, #main_debate article div button, #add_issue_section aside form button {
+  padding: 0px;
+  background-color: transparent;
+  border: 0px;
+  color: #3366FF;
+  cursor: pointer; }
+
+.buttonslinks:hover, #main_debate article div button:hover, #add_issue_section aside form button:hover {
+  text-decoration: underline; }
+
+.h2, main h2 {
+  font-size: 3rem;
+  color: #e72a64;
+  width: 100%;
+  margin: auto auto 20px auto;
+  padding: 0px 20px 10px 20px;
+  box-sizing: border-box; }
+
+.h3, #main_debate h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #e72a64;
+  width: 100%;
+  margin: auto auto 20px auto;
+  padding: 0px 20px 10px 20px;
+  box-sizing: border-box; }
+
+#add_issue_section .inactive-issue {
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px;
+  box-shadow: 0px 0px 0px;
+  color: #aaa;
+  cursor: pointer; }
+#add_issue_section .inactive-issue:hover {
+  color: #333; }
+#add_issue_section .active-issue {
+  color: #333; }
 #add_issue_section article {
-  display: block; }
+  display: block;
+  -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
   #add_issue_section article h4 {
     width: 100%;
     font-size: 1.5rem;
     line-height: 1.8rem;
     font-weight: 400;
-    color: #333; }
+    color: inherit; }
   #add_issue_section article h5 {
     width: 100%;
     font-size: 1.15rem;
     line-height: 1.5rem;
     font-weight: 300;
-    color: #333; }
+    color: inherit; }
     #add_issue_section article h5 span {
       display: block;
       font-size: 1rem;
@@ -482,5 +579,21 @@ aside {
     color: #bbb;
     font-size: inherit;
     font-weight: 300; }
+  #add_issue_section aside form div {
+    margin-bottom: 10px; }
+    #add_issue_section aside form div label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      padding-left: 10px; }
+    #add_issue_section aside form div input[type=radio] {
+      border-color: blue;
+      border-width: 2px; }
+    #add_issue_section aside form div input[type=radio]:checked {
+      content: "•";
+      color: green; }
+  #add_issue_section aside form button {
+    font-size: 1.15rem;
+    margin: 20px 0px; }
 
 /*# sourceMappingURL=master_desktop.css.map */

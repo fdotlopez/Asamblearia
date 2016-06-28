@@ -2,22 +2,36 @@
 
 #add_issue_section
 
+  .inactive-issue
+    background-color: transparent
+    -webkit-box-shadow: 0px 0px 0px
+    box-shadow: 0px 0px 0px
+    color: $textColor_notification
+    cursor: pointer
+
+  .inactive-issue:hover
+    color: $textColor
+
+  .active-issue
+    color: $textColor
+
   article
     display: block
+    +animate(0.3s)
 
     h4
       width: 100%
       font-size: 1.5rem
       line-height: 1.8rem
       font-weight: 400
-      color: $textColor
+      color: inherit
 
     h5
       width: 100%
       font-size: 1.15rem
       line-height: 1.5rem
       font-weight: 300
-      color: $textColor
+      color: inherit
 
       span
         display: block
@@ -74,3 +88,25 @@
         border: 1px solid $menuprincipal
 
       +placeholders(#bbb, inherit, 300)
+
+      div
+        margin-bottom: 10px
+
+        label
+          display: inline-block
+          cursor: pointer
+          position: relative
+          padding-left: 10px
+
+        input[type=radio]
+          border-color: blue
+          border-width: 2px
+
+        input[type=radio]:checked
+          content: "\2022"
+          color: green
+
+      button
+        @extend .buttonslinks
+        font-size: 1.15rem
+        margin: 20px 0px

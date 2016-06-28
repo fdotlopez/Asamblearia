@@ -53,33 +53,15 @@
     </script>
   </head>
   <body>
-    <header>
-      <div></div>
-      <nav class="menu">
-        <div class="wrap_menu">
-          <ul>
-            <li class="submenu_item"><a href="#">Ayuda</a></li>
-            <li class="submenu_item"><a href="#">FAQ</a></li>
-            <li class="submenu_item"><a href="#">Ampliar Servicio</a></li>
-            <li class="submenu_item"><a href="#">Protección de datos</a></li>
-            <li class="submenu_item"><a href="#">Condiciones Legales</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="profile">
-        <ul>
-          <li><a href="">Cambiar comunidad</a></li>
-          <li><a href="">Ajustar perfil para esta comunidad</a></li>
-          <li><a href="">Cerrar sesión</a></li>
-        </ul>
-      </div>
-    </header>
+
+    <!-- Header -->
+    <?php include_once 'head.html' ?>
 
     <ul class="context">
-      <li id="first_step">Propuesta de temas</li>
-      <li id="second_step">Debate Previo</li>
-      <li id="third_step">Reunión</li>
-      <li id="fourth_step">Acta</li>
+      <li id="first_step" class="disable">Propuesta de temas</li>
+      <li id="second_step" class="active">Debate Previo</li>
+      <li id="third_step" class="disable">Reunión</li>
+      <li id="fourth_step" class="disable">Acta</li>
     </ul>
 
     <nav class="side_menu">

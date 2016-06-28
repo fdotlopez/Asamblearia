@@ -3,5 +3,5 @@
   //include_once 'mobile/index_mobile.html';
 
   //Desktop version
-  include_once 'desktop/index_desktop.php';
+  include_once 'desktop/index_seleccionartemas.php';
 ?>

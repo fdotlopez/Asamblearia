@@ -34,6 +34,7 @@ $menuprincipal: #e72a64
 $textColor: #333
 $textColor_notification: #aaa
 $backgroundcolor: #f5f5f5
+$linkcolor: #3366FF
 
 //article
 .article_common
@@ -65,6 +66,17 @@ $backgroundcolor: #f5f5f5
   cursor: pointer
   letter-spacing: 0.1rem
 
+//
+.buttonslinks
+  padding: 0px
+  background-color: transparent
+  border: 0px
+  color: $linkcolor
+  cursor: pointer
+
+.buttonslinks:hover
+  text-decoration: underline
+
 //placeholder
 =placeholders($color_place, $font-size_place, $weight_place)
   ::-webkit-input-placeholder
@@ -87,3 +99,22 @@ $backgroundcolor: #f5f5f5
     color: $color_place
     font-size: $font-size_place
     font-weight: $weight_place
+
+//h3
+.h2
+  font-size: 3rem
+  color: $menuprincipal
+  width: 100%
+  margin: auto auto 20px auto
+  padding: 0px 20px 10px 20px
+  box-sizing: border-box
+
+//h3
+.h3
+  font-size: 2rem
+  font-weight: 300
+  color: $menuprincipal
+  width: 100%
+  margin: auto auto 20px auto
+  padding: 0px 20px 10px 20px
+  box-sizing: border-box

@@ -48,28 +48,42 @@
       <h2>Puntos del día</h2>
       <h3 class="variable_second_title">Estos son los temas propuestos hasta ahora</h3>
       <section>
-        <article>
+        <article class="active-issue">
           <h4>Aspectos a mejorar</h4>
-          <h5>Hace tres meses se marcaron unos claros objetivos para el trimestre. Debemos proponer aspectos a mejorar que reflejen aquellas actividades del día a día que no han salido como estaba panificado o que podrían mejorarse.<span>hace 2 minutos</span></h5>
         </article>
-        <article>
+        <article class="inactive-issue">
           <h4>¿Qué día celebramos la despedida?</h4>
-          <h5>Dado que llega el final de curso, se celebrará la despedida de la temporada. ¿Cuando os va bien hacerla?<span>hace 3 horas</span></h5>
         </article>
-        <article>
+        <article class="inactive-issue">
           <h4>Revisión de los objetivos de cada grupo con los monitores personales</h4>
-          <h5>Cómo cada final de trimestre se hablará de los objetivos alcanzados y se valorará con el resto de grupo. <strong>Preparar presentación</strong>.<span>hace 1 día</span></h5>
         </article>
       </section>
       <aside class="gmail_api_content">
         <article class="">
           <h3 class="gmail_api_headtext">Añade un tema</h3>
           <form action="" method="post">
-            <label for="issue">Añade un tema de tu interés</label>
-            <input type="text" name="issue" placeholder="Escribe aquí el tema">
-            <label for="descrip">Añade una pequeña descripción</label>
-            <textarea name="descrip" placeholder="Escribe aquí la descripción"></textarea>
-            <input type="submit" value="añadir">
+            <div class="">
+              <input type="radio" name="tipodetema" value="debate_previo">
+              <label for="debate_previo">Debate previo</label>
+            </div>
+            <div class="">
+              <input type="radio" name="tipodetema" value="votacion_previa">
+              <label for="votacion_previa">Votación previa</label>
+            </div>
+            <div class="">
+              <input type="radio" name="tipodetema" value="no_debate">
+              <label for="no_debate">Tema a tratar en reunión</label>
+            </div>
+            <div class="">
+              <input type="radio" name="tipodetema" value="proxima_reunion">
+              <label for="proxima_reunion">Siguente reunión</label>
+            </div>
+            <div class="">
+              <input type="radio" name="tipodetema" value="eliminar_tema">
+              <label for="eliminar_tema">No incluir tema en ninguna reunión</label>
+            </div>
+            <button>Adjuntar archivo</button>
+            <input type="submit" name="preparartemas" value="Siguiente Tema">
           </form>
         </article>
       </aside>
