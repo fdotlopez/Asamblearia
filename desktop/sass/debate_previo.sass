@@ -147,9 +147,9 @@ body
       text-decoration: underline
       color: $menuprincipal
 
-    a:focus
-      color: $menuprincipal
+    .aactive
       font-weight: 700
+      color: $menuprincipal
 
   h6
     width: 100%
@@ -371,3 +371,26 @@ aside
 
       button:hover
         text-decoration: underline
+
+#voto
+  display: none
+
+  h3
+    @extend .h3
+
+  label
+    font-size: 1.25rem
+
+  input[type=radio]
+    width: 3rem
+
+  input[type=submit]
+    margin-top: 20px
+
+  aside
+
+    article svg
+      padding: 20px
+      box-sizing: border-box
+      height: 150px
+      +background_image('../img/grafic.svg')

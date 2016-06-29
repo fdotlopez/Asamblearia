@@ -7,14 +7,14 @@
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   margin-bottom: 20px; }
 
-.introtext, #add_issue_section aside form input[type=text], #add_issue_section aside form textarea {
+.introtext, form input[type=text], form textarea {
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
   border-bottom: 1px solid #000;
   font-family: "Lato", sans-serif; }
 
-.calltoaction, #add_issue_section aside form input[type=submit] {
+.calltoaction, form input[type=submit] {
   background-color: #e72a64;
   color: #fff;
   text-transform: uppercase;
@@ -26,21 +26,21 @@
   cursor: pointer;
   letter-spacing: 0.1rem; }
 
-.buttonslinks, #add_issue_section aside form button {
+.buttonslinks, form button {
   padding: 0px;
   background-color: transparent;
   border: 0px;
   color: #3366FF;
   cursor: pointer; }
 
-.buttonslinks:hover, #add_issue_section aside form button:hover {
+.buttonslinks:hover, form button:hover {
   text-decoration: underline; }
 
 .h2 {
   font-size: 3rem;
   color: #e72a64;
   width: 100%;
-  margin: auto auto 10px auto;
+  margin: auto auto 5px auto;
   padding: 0px 20px 10px 0px;
   box-sizing: border-box; }
 
@@ -52,6 +52,78 @@
   margin: auto auto 20px auto;
   padding: 0px 20px 10px 0px;
   box-sizing: border-box; }
+
+form {
+  width: 100%;
+  -moz-placeholder-font-family: "Lato", sans-serif;
+  -moz-placeholder-color: #bbb;
+  -moz-placeholder-font-size: inherit;
+  -moz-placeholder-font-weight: 300;
+  -ms-input-placeholder-font-family: "Lato", sans-serif;
+  -ms-input-placeholder-color: #bbb;
+  -ms-input-placeholder-font-size: inherit;
+  -ms-input-placeholder-font-weight: 300; }
+  form label {
+    font-weight: 300;
+    display: block;
+    margin-bottom: 5px; }
+  form input[type=text] {
+    padding: 5px 5px 5px 5px;
+    width: 80%;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #333; }
+  form textarea {
+    font-family: "Lato", sans-serif;
+    width: 80%;
+    padding: 5px 5px 0px 5px;
+    height: 30px;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: 300;
+    -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
+  form input[type=submit] {
+    margin-bottom: 10px;
+    -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
+  form input[type=submit]:hover {
+    background-color: #fff;
+    color: #e72a64;
+    border: 1px solid #e72a64; }
+  form ::-webkit-input-placeholder {
+    font-family: "Lato", sans-serif;
+    color: #bbb;
+    font-size: inherit;
+    font-weight: 300; }
+  form ::-moz-placeholder {
+    font-family: "Lato", sans-serif;
+    color: #bbb;
+    font-size: inherit;
+    font-weight: 300; }
+  form div {
+    margin-bottom: 10px; }
+    form div label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      padding-left: 10px; }
+    form div input[type=radio] {
+      border-color: blue;
+      border-width: 2px; }
+    form div input[type=radio]:checked {
+      content: "•";
+      color: green; }
+  form button {
+    font-size: 1.15rem;
+    margin: 20px 0px; }
 
 #add_issue_section .inactive-issue {
   background-color: transparent;
@@ -94,77 +166,7 @@
 #add_issue_section aside h3 {
   font-size: 1.5rem;
   margin-bottom: 20px; }
-#add_issue_section aside form {
-  width: 100%;
-  -moz-placeholder-font-family: "Lato", sans-serif;
-  -moz-placeholder-color: #bbb;
-  -moz-placeholder-font-size: inherit;
-  -moz-placeholder-font-weight: 300;
-  -ms-input-placeholder-font-family: "Lato", sans-serif;
-  -ms-input-placeholder-color: #bbb;
-  -ms-input-placeholder-font-size: inherit;
-  -ms-input-placeholder-font-weight: 300; }
-  #add_issue_section aside form label {
-    font-size: 1.15rem;
-    font-weight: 300;
-    display: block;
-    margin-bottom: 5px; }
-  #add_issue_section aside form input[type=text] {
-    padding: 5px 5px 5px 5px;
-    width: 80%;
-    display: block;
-    margin-bottom: 20px;
-    font-size: 1rem;
-    color: #333; }
-  #add_issue_section aside form textarea {
-    font-family: "Lato", sans-serif;
-    width: 80%;
-    padding: 5px 5px 0px 5px;
-    height: 30px;
-    margin-bottom: 40px;
-    color: #333;
-    font-weight: 300;
-    -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-    -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
-  #add_issue_section aside form input[type=submit] {
-    margin-bottom: 10px;
-    -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-    -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
-  #add_issue_section aside form input[type=submit]:hover {
-    background-color: #fff;
-    color: #e72a64;
-    border: 1px solid #e72a64; }
-  #add_issue_section aside form ::-webkit-input-placeholder {
-    font-family: "Lato", sans-serif;
-    color: #bbb;
-    font-size: inherit;
-    font-weight: 300; }
-  #add_issue_section aside form ::-moz-placeholder {
-    font-family: "Lato", sans-serif;
-    color: #bbb;
-    font-size: inherit;
-    font-weight: 300; }
-  #add_issue_section aside form div {
-    margin-bottom: 10px; }
-    #add_issue_section aside form div label {
-      display: inline-block;
-      cursor: pointer;
-      position: relative;
-      padding-left: 10px; }
-    #add_issue_section aside form div input[type=radio] {
-      border-color: blue;
-      border-width: 2px; }
-    #add_issue_section aside form div input[type=radio]:checked {
-      content: "•";
-      color: green; }
-  #add_issue_section aside form button {
-    font-size: 1.15rem;
-    margin: 20px 0px; }
+#add_issue_section aside form label {
+  font-size: 1.15rem; }
 
 /*# sourceMappingURL=add_issue.css.map */

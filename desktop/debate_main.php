@@ -37,8 +37,10 @@
 
             secondmenu = false;
 
-            $('#main_debate').show();
+            $('#main_debate').fadeIn();
             $('#main_ultimas_noticias').hide();
+            $('#voto').hide();
+            $(this).addClass('aactive');
           }
         });
 
@@ -57,7 +59,9 @@
             secondmenu=true;
 
             $('#main_debate').hide();
-            $('#main_ultimas_noticias').show();
+            $('#main_ultimas_noticias').fadeIn();
+            $('#voto').hide();
+            $(this).addClass('aactive');
           }
         });
 
@@ -73,8 +77,13 @@
 
             $('.context li').fadeIn();
 
+            secondmenu=true;
+
             $('#main_debate').hide();
             $('#main_ultimas_noticias').hide();
+            $('#voto').fadeIn();
+            $(this).addClass('aactive');
+
         });
 
       });
@@ -163,7 +172,7 @@
     </main>
 
     <?php include_once 'debate_prev.html' ?>
-    <?php include_once '' ?>
+    <?php include_once 'voto.html' ?>
 
 
   </body>

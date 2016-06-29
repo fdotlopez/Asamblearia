@@ -51,64 +51,6 @@
       margin-bottom: 20px
 
     form
-      width: 100%
 
       label
         font-size: 1.15rem
-        font-weight: 300
-        display: block
-        margin-bottom: 5px
-
-      input[type=text]
-        @extend .introtext
-        padding: 5px 5px 5px 5px
-        width: 80%
-        display: block
-        margin-bottom: 20px
-        font-size: 1rem
-        color: #333
-
-      textarea
-        @extend .introtext
-        font-family: 'Lato', sans-serif
-        width: 80%
-        padding: 5px 5px 0px 5px
-        height: 30px
-        margin-bottom: 40px
-        color: #333
-        font-weight: 300
-        +animate(0.3s)
-
-      input[type=submit]
-        @extend .calltoaction
-        margin-bottom: 10px
-        +animate(0.3s)
-
-      input[type=submit]:hover
-        background-color: #fff
-        color: $menuprincipal
-        border: 1px solid $menuprincipal
-
-      +placeholders(#bbb, inherit, 300)
-
-      div
-        margin-bottom: 10px
-
-        label
-          display: inline-block
-          cursor: pointer
-          position: relative
-          padding-left: 10px
-
-        input[type=radio]
-          border-color: blue
-          border-width: 2px
-
-        input[type=radio]:checked
-          content: "\2022"
-          color: green
-
-      button
-        @extend .buttonslinks
-        font-size: 1.15rem
-        margin: 20px 0px
