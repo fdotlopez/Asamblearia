@@ -22,15 +22,19 @@
 
         $('#issue1').click(function(e){
           e.preventDefault();
+
           if(secondmenu==true){
+
             $('#third_menu').css({
-              'left':'20%',
+              'left':'300px',
               'opacity': '1'
             });
             $('main').css({
-              'margin-left':'40%',
+              'padding-left':'620px',
             });
-            $('.context li').fadeToggle();
+
+              $('.context li').fadeIn();
+
             secondmenu = false;
 
             $('#main_debate').show();
@@ -42,15 +46,35 @@
           e.preventDefault();
           if(secondmenu==false){
             $('#third_menu').css({
-              'left':'0%',
+              'left':'0px',
               'opacity': '0'
             });
             $('main').css({
-              'margin-left':'20%'
+              'padding-left':'300px'
             });
-            $('.context li').fadeToggle();
+            $('.context li').fadeOut();
+
             secondmenu=true;
+
+            $('#main_debate').hide();
+            $('#main_ultimas_noticias').show();
           }
+        });
+
+        $('#issue2').click(function(e){
+          e.preventDefault();
+            $('#third_menu').css({
+              'left':'0px',
+              'opacity': '0'
+            });
+            $('main').css({
+              'padding-left':'300px'
+            });
+
+            $('.context li').fadeIn();
+
+            $('#main_debate').hide();
+            $('#main_ultimas_noticias').hide();
         });
 
       });
@@ -83,7 +107,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a id="issue2" href="#">
             <h5>¡Qué día celebramos la despedi...</h5>
             <h6>Debéis votar una de las cuatro fechas propuestas<span></span></h6>
           </a>
@@ -139,6 +163,7 @@
     </main>
 
     <?php include_once 'debate_prev.html' ?>
+    
 
   </body>
 </html>
