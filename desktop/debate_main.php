@@ -163,7 +163,8 @@
     </main>
 
     <?php include_once 'debate_prev.html' ?>
-    
+    <?php include_once '' ?>
+
 
   </body>
 </html>
