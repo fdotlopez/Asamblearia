@@ -31,7 +31,8 @@
   background-color: transparent;
   border: 0px;
   color: #3366FF;
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none; }
 
 .buttonslinks:hover, form button:hover, #main_debate article div button:hover {
   text-decoration: underline; }
@@ -52,6 +53,14 @@
   margin: auto auto 20px auto;
   padding: 0px 20px 10px 0px;
   box-sizing: border-box; }
+
+.chevron {
+  background-image: url("../img/chevron.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem; }
 
 form {
   width: 100%;
@@ -222,17 +231,35 @@ header {
   flex-direction: row;
   justify-content: "space-between";
   background-color: #f5f5f5;
-  padding: 20px 20px 10px 20px; }
+  padding: 20px 20px 10px 20px;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1); }
   .context li {
-    display: none;
     width: 25%;
     padding: 10px;
     box-sizing: border-box;
     border-top: 1px solid #aaa;
     color: #aaa; }
+  .context .disable {
+    border-top: 1px solid #aaa;
+    color: #aaa;
+    -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
   .context .active {
     border-top: 2px solid #e72a64;
-    color: #000; }
+    color: #000;
+    -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
 
 body {
   background-color: #f5f5f5; }

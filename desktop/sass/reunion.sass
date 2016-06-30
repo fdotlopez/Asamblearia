@@ -1,0 +1,77 @@
+@import "common"
+
+#reunion
+  article
+    display: block
+
+    div
+      display: block
+      height: 25px
+
+    h4
+      font-size: 1.5rem
+      width: 90%
+      float: left
+      font-weight: 400
+
+    form
+      clear: both
+      width: 100%
+
+      label
+        font-size: 1.20rem
+
+    .img_desplegable
+      width: 2rem
+      height: 2rem
+      +background_image('../img/chevron.svg')
+      float: right
+
+    p
+      width: 100%
+      float: none
+      clear: both
+      font-weight: 300
+      overflow: hidden
+      display: none
+
+  aside
+    display: none
+
+    article svg
+      font-family: 'Lato', sans-serif
+      padding: 20px
+      box-sizing: border-box
+      height: 150px
+      +background_image('../img/grafic.svg')
+
+    h5
+      font-size: 1.25rem
+      font-weight: 300
+
+footer
+  position: fixed
+  bottom: 0
+  width: 100%
+  height: 40px
+  padding: 0 20px 0 320px
+  box-sizing: border-box
+  background-color: $backgroundcolor
+
+  .play
+    position: inherit
+    +background_image('../img/progres_bar.svg')
+    width: 300px
+    height: 20px
+    float: left
+    margin-left: 20px
+
+  a
+    @extend .buttonslinks
+    width: 30%
+    float: right
+    margin-right: 20px
+
+  a::after
+    content: normal
+    @extend .chevron

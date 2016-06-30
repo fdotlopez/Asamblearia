@@ -23,50 +23,60 @@
         $('#issue1').click(function(e){
           e.preventDefault();
 
-          if(secondmenu==0){
+          $('#third_menu').css({
+            'left':'300px',
+            'opacity': '1'
+          });
+          $('main').css({
+            'padding-left':'620px',
+          });
 
-            $('#third_menu').css({
-              'left':'300px',
-              'opacity': '1'
+            $('.context').css({
+              'opacity':'1'
             });
-            $('main').css({
-              'padding-left':'620px',
-            });
 
-              $('.context li').fadeIn();
-
-            secondmenu = 0;
-
-            $('#main_debate').fadeIn();
-            $('#main_ultimas_noticias').hide();
-            $('#voto').hide();
-            $('#issue1').addClass('aactive');
-            $('#issue0').removeClass('aactive');
-            $('#issue2').removeClass('aactive');
-          }
+          $('#main_debate').fadeIn();
+          $('#main_ultimas_noticias').hide();
+          $('#voto').hide();
+          $('#issue1').addClass('aactive');
+          $('#issue0').removeClass('aactive');
+          $('#issue2').removeClass('aactive');
         });
 
         $('#issue0').click(function(e){
           e.preventDefault();
-          if(secondmenu==0){
-            $('#third_menu').css({
-              'left':'0px',
-              'opacity': '0'
-            });
-            $('main').css({
-              'padding-left':'300px'
-            });
-            $('.context li').fadeOut();
+          $('#third_menu').animate({
+            'opacity': '0',
+            'left':'0px',
+          }, {duration: 'fast', ease:'easeInOutExpo'});
 
-            secondmenu=0;
+          $('.context').animate({
+            'opacity':'0'
+          }, {duration: 'fast', ease:'easeInOutExpo'}, function(){
+            $('main').animate({
+              'padding-left':'320px',
+            });
+          });
 
-            $('#main_debate').hide();
-            $('#main_ultimas_noticias').fadeIn();
-            $('#voto').hide();
-            $('#issue0').addClass('aactive');
-            $('#issue1').removeClass('aactive');
-            $('#issue2').removeClass('aactive');
-          }
+          /*$('#third_menu').css({
+            'left':'0px',
+            'opacity': '0'
+          });
+          $('main').css({
+            'padding-left':'320px'
+          });
+          $('.context').animate({
+            'opacity':'0'
+          }, {duration: 'fast', ease:'easeInOutExpo'});*/
+
+
+          $('#main_debate').hide();
+          $('#main_ultimas_noticias').fadeIn();
+          $('#voto').hide();
+          $('#issue0').addClass('aactive');
+          $('#issue1').removeClass('aactive');
+          $('#issue2').removeClass('aactive');
+
         });
 
         $('#issue2').click(function(e){
@@ -76,7 +86,7 @@
               'opacity': '0'
             });
             $('main').css({
-              'padding-left':'300px'
+              'padding-left':'320px'
             });
 
             $('.context li').fadeIn();

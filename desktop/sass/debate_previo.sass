@@ -98,19 +98,25 @@ header
   +flex('space-between')
   background-color: $backgroundcolor
   padding: 20px 20px 10px 20px
+  opacity: 0
+  +animate(0.5s)
 
   li
-    display: none
     width: 25%
     padding: 10px
     box-sizing: border-box
     border-top: 1px solid #aaa
     color: #aaa
 
+  .disable
+    border-top: 1px solid #aaa
+    color: #aaa
+    +animate(0.3s)
+
   .active
     border-top: 2px solid $menuprincipal
     color: #000
-
+    +animate(0.3s)
 
 body
   background-color: $backgroundcolor
@@ -146,6 +152,8 @@ body
     a:hover
       text-decoration: underline
       color: $menuprincipal
+
+    .adisable
 
     .aactive
       font-weight: 700

@@ -31,7 +31,8 @@
   background-color: transparent;
   border: 0px;
   color: #3366FF;
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none; }
 
 .buttonslinks:hover, form button:hover {
   text-decoration: underline; }
@@ -52,6 +53,14 @@
   margin: auto auto 20px auto;
   padding: 0px 20px 10px 0px;
   box-sizing: border-box; }
+
+.chevron {
+  background-image: url("../img/chevron.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem; }
 
 form {
   width: 100%;
