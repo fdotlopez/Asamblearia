@@ -6,7 +6,7 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 
 
 //mobile version
-include_once 'mobile/index_mobile.php';
+include_once 'mobile/propuestas.php';
 
 
 } else {
