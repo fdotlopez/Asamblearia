@@ -155,7 +155,7 @@
       </ul>
     </nav>
 
-    <main id="main_ultimas_noticias">
+    <main id="main_ultimas_noticias" class="standar">
       <h2>Que ha pasado mientras no estabas</h2>
       <section>
         <article>
