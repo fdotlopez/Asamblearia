@@ -9,7 +9,19 @@
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
+      $('document').ready(function(){
 
+        $('#g_reunion2').click(function(e){
+          e.preventDefault();
+          window.location.href = "mobile/reunion2.php";
+        });
+
+        $('#anade_tema').click(function(e){
+          e.preventDefault();
+          $('#tema3').fadeIn();
+        });
+
+      });
     </script>
   </head>
   <body>
@@ -37,7 +49,7 @@
         <h4>¿Qué día celebramos la despedida?</h4>
         <div></div>
       </article>
-      <article class="box_content">
+      <article class="box_content" id="t3">
         <h4>Revisión de los objetivos de cada grupo con los monitores responsables</h4>
         <div></div>
       </article>
@@ -48,7 +60,7 @@
           <input type="text" name="issue" placeholder="Escribe aquí el tema">
           <label for="descrip">Añade una pequeña descripción</label>
           <textarea name="descrip" placeholder="Escribe aquí la descripción"></textarea>
-          <input type="submit" value="añadir">
+          <input type="submit" value="añadir" id="anadir_tema">
         </form>
       </article>
     </main>

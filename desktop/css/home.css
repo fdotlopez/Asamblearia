@@ -14,7 +14,7 @@
   border-bottom: 1px solid #000;
   font-family: "Lato", sans-serif; }
 
-.calltoaction, form input[type=submit], section:first-of-type div .registrarse, section:nth-of-type(2) a, section:nth-of-type(4) article div ul a, section:nth-of-type(4) article div a a {
+.calltoaction, form input[type=submit], section:first-of-type .text_main .registrarse, section:nth-of-type(2) a, section:nth-of-type(4) article div ul a, section:nth-of-type(4) article div a a {
   background-color: #e72a64;
   color: #fff;
   text-transform: uppercase;
@@ -195,28 +195,26 @@ section {
   box-sizing: border-box; }
 
 section:first-of-type {
-  -webkit-display: flex;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  background-image: url("../img/mans_generic.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 98%;
   background-color: #f5f5f5;
-  margin-top: 60px; }
-  section:first-of-type img {
-    width: 20%;
-    display: block;
-    margin: 150px auto 0px auto; }
-  section:first-of-type div {
-    padding: 20px auto;
+  display: block;
+  margin-top: 60px;
+  height: 440px; }
+  section:first-of-type .text_main {
+    padding: 50px 0px;
     box-sizing: border-box; }
-    section:first-of-type div h2 {
-      font-size: 3rem;
+    section:first-of-type .text_main h2 {
+      font-size: 2.8rem;
       max-width: 600px;
       text-align: center;
       font-weight: 300;
       padding: 20px;
       box-sizing: border-box;
-      margin: 100px auto 20px auto; }
-    section:first-of-type div .registrarse {
+      margin: 50px auto 20px auto; }
+    section:first-of-type .text_main .registrarse {
       width: 250px;
       display: block;
       margin: auto auto auto auto;
@@ -230,7 +228,7 @@ section:first-of-type {
       -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
       -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
       transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
-    section:first-of-type div .registrarse:hover {
+    section:first-of-type .text_main .registrarse:hover {
       background-color: #e72a64;
       color: #f5f5f5; }
 
@@ -239,7 +237,7 @@ section:first-of-type {
   font-weight: 300;
   width: 250px;
   display: block;
-  margin: auto;
+  margin: auto auto 0px auto;
   text-align: center; }
   .subcall a, section:nth-of-type(2) p a {
     color: #3366FF;
@@ -337,11 +335,11 @@ section:nth-of-type(4) {
     box-sizing: border-box;
     margin: auto auto 50px auto; }
     section:nth-of-type(4) article div {
-      width: 250px; }
+      width: 260px; }
       section:nth-of-type(4) article div ul, section:nth-of-type(4) article div a {
         text-align: center; }
         section:nth-of-type(4) article div ul li, section:nth-of-type(4) article div a li {
-          font-size: 1.8rem;
+          font-size: 1.5rem;
           font-weight: 300;
           padding: 20px 0;
           box-sizing: border-box; }
@@ -353,7 +351,7 @@ section:nth-of-type(4) {
           border-top: 1px solid #000;
           box-sizing: border-box; }
         section:nth-of-type(4) article div ul a, section:nth-of-type(4) article div a a {
-          width: 250px;
+          width: 220px;
           font-size: 1rem;
           font-weight: 400;
           display: block;

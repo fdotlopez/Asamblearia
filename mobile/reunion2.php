@@ -9,7 +9,12 @@
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-
+    $('document').ready(function(){
+      $('#g_reunion').click(function(e){
+        e.preventDefault();
+        window.location.href = "reunion.php";
+      });
+    });
     </script>
   </head>
   <body>
@@ -33,25 +38,19 @@
         <span class="duracion">Duración: 50'</span>
         <a href="*" class="link">ver índice</a>
       </div>
-      <article class="box_content">
+      <article class="box_content, votos_reunion">
         <h5>Votaciones</h5>
-          <form action="" method="post">
-            <div class="">
-              <input type="radio" name="votacion" value="votacion">
-              <label for="votacion">Priorizar la organización de salidas.</label>
-            </div>
-            <div class="">
-              <input type="radio" name="votacion" value="votacion">
-              <label for="votacion">Priorizar la comunicación con los padres
-                e implantar una nueva reunión mensual.</label>
-            </div>
-            <div class="">
-              <input type="radio" name="votacion" value="votacion">
-              <label for="votacion">Voto por dividir nuestro tiempo y trabajar
-                sobre las dos acciones.</label>
-            </div>
-            <input type="submit" name="votacion" value="Votar">
-          </form>
+        <form action="" method="post">
+          <input type="radio" name="votacion" value="votacion">
+          <label for="votacion">Priorizar la organización de salidas.</label>
+          <input type="radio" name="votacion" value="votacion">
+          <label for="votacion">Priorizar la comunicación con los padres
+            e implantar una nueva reunión mensual.</label>
+          <input type="radio" name="votacion" value="votacion">
+          <label for="votacion">Voto por dividir nuestro tiempo y trabajar
+            sobre las dos acciones.</label>
+          <input type="submit" name="votacion" value="Votar" id="g_reunion">
+        </form>
       </article>
     </main>
   </body>

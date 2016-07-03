@@ -9,7 +9,14 @@
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
+    $('document').ready(function(){
 
+      $('#g_acta').click(function(e){
+        e.preventDefault();
+        window.location.href = "acta.php";
+      });
+
+    });
     </script>
   </head>
   <body>
@@ -23,7 +30,7 @@
        <div class="status1">
          <h4>Reunión</h4>
        </div>
-       <div class="status2">
+       <div class="status2" id="g_acta">
          <h4>Acta</h4>
        </div>
       </div>

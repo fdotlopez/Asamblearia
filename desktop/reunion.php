@@ -1,6 +1,7 @@
 <head>
     <meta charset="utf-8">
     <title>Asamblearia</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
     <link rel="stylesheet" type='text/css' href="desktop/css/master_desktop.css">
     <link rel="stylesheet" type='text/css' href="css/master_desktop.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>

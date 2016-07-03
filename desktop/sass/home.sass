@@ -23,27 +23,27 @@ section
   box-sizing: border-box
 
 section:first-of-type
-  +flex(space-between)
+  background-image: url('../img/mans_generic.svg')
+  background-repeat: no-repeat
+  background-position: center bottom
+  background-size: 98%
   background-color: $backgroundcolor
+  display: block
   margin-top: 60px
+  height: 440px
 
-  img
-    width: 20%
-    display: block
-    margin: 150px auto 0px auto
-
-  div
-    padding: 20px auto
+  .text_main
+    padding: 50px 0px
     box-sizing: border-box
 
     h2
-      font-size: 3rem
+      font-size: 2.8rem
       max-width: 600px
       text-align: center
       font-weight: 300
       padding: 20px
       box-sizing: border-box
-      margin: 100px auto 20px auto
+      margin: 50px auto 20px auto
 
     .registrarse
       @extend .calltoaction
@@ -66,7 +66,7 @@ section:first-of-type
   font-weight: 300
   width: 250px
   display: block
-  margin: auto
+  margin: auto auto 0px auto
   text-align: center
 
   a
@@ -172,13 +172,13 @@ section:nth-of-type(4)
 
 
     div
-      width: 250px
+      width: 260px
 
       ul, a
         text-align: center
 
         li
-          font-size: 1.8rem
+          font-size: 1.5rem
           font-weight: 300
           padding: 20px 0
           box-sizing: border-box
@@ -194,7 +194,7 @@ section:nth-of-type(4)
 
         a
           @extend .calltoaction
-          width: 250px
+          width: 220px
           font-size: 1rem
           font-weight: 400
           display: block

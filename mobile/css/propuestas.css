@@ -143,6 +143,8 @@ form {
   font-weight: 700;
   padding: 10px 0px;
   box-sizing: border-box; }
+#propuestas #t3 {
+  display: none; }
 #propuestas .box_content {
   -webkit-display: flex;
   display: flex;
