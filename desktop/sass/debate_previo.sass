@@ -185,7 +185,7 @@ body
   position: fixed
   top: 120px
   left: 00%
-  width: 300px
+  width: 200px
   height: 100%
   padding: 20px 20px 20px 20px
   box-sizing: border-box
@@ -331,10 +331,21 @@ aside
   display: none
 
   h2
-    @extend .h2
+    font-size: 2.25rem
+    width: 100%
+    margin: auto auto auto
+    padding: 0px 20px 0px 0px
+    box-sizing: border-box
+    font-weight: 700
 
   h3
-    @extend .h3
+    font-size: 1.5rem
+    line-height: 1.5rem
+    font-weight: 300
+    width: 100%
+    margin: auto auto 20px auto
+    padding: 0px 20px 10px 00px
+    box-sizing: border-box
 
   article
     @extend .article_common
@@ -419,11 +430,11 @@ aside
 
   aside
 
-    article svg
+    article div
       padding: 20px
       box-sizing: border-box
       height: 150px
-      +background_image('../img/grafic.svg')
+      +background_image('../img/grafico_colores.png')
 
 
 #popup_status
@@ -436,12 +447,35 @@ aside
 
   div
     position: absolute
-    top: 30%
+    top: 40%
     left: 50%
+    width: 500px
     @extend .article_common
     +translate(-50%, -50%)
 
     img
       display: block
-      width: 50%
+      width: 15%
       margin: 10px auto
+      margin-bottom: 20px
+
+    h2
+      width: 60%
+      display: block
+      font-size: 2rem
+      text-align: center
+      font-weight: 300
+      color: $menuprincipal
+      line-height: 2.4rem
+      margin: 20px auto
+
+    a
+      text-align: center
+      display: block
+      margin: 0px auto 20px auto
+      color: $linkcolor
+      text-decoration: none
+      font-weight: 400
+
+    a:hover
+      text-decoration: underline

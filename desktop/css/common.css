@@ -38,17 +38,17 @@
   text-decoration: underline; }
 
 .h2 {
-  font-size: 3rem;
-  color: #e72a64;
+  font-size: 2.25rem;
   width: 100%;
   margin: auto auto 5px auto;
   padding: 0px 20px 10px 0px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-weight: 700; }
 
 .h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   font-weight: 300;
-  color: #e72a64;
   width: 100%;
   margin: auto auto 20px auto;
   padding: 0px 20px 10px 0px;

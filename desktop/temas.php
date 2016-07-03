@@ -62,7 +62,7 @@
     </ul>
 
     <nav class="side_menu">
-      <h3>Reunión Trimestral II</h3>
+      <h3>Reunión Trimestral 2</h3>
       <ul>
         <li>
           <a id="issue0" href="#">

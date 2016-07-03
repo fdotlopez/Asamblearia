@@ -86,7 +86,7 @@
     </ul>
 
     <nav class="side_menu">
-      <h3>Reunión Trimestral II</h3>
+      <h3>Reunión Trimestral 2</h3>
       <ul>
         <li>
           <a id="issue0" href="#">
@@ -159,7 +159,7 @@
 
       <aside class="gmail_api_content">
         <article class="">
-          <svg></svg>
+          <div></div>
           <h5>La Ganadora</h5>
           <h6>Viernes 11 de junio</h6>
         </article>

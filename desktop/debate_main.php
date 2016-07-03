@@ -28,7 +28,7 @@
             'opacity': '1'
           });
           $('main').css({
-            'padding-left':'620px',
+            'padding-left':'520px',
           });
 
             $('.context').css({
@@ -88,6 +88,10 @@
 
         });
 
+        $('#empieza_debate').click(function(){
+          $('#popup_status').fadeToggle();
+        });
+
       });
     </script>
   </head>
@@ -104,7 +108,7 @@
     </ul>
 
     <nav class="side_menu">
-      <h3>Reunión Trimestral II</h3>
+      <h3>Reunión Trimestral 2</h3>
       <ul>
         <li>
           <a id="issue0" href="#">
@@ -147,7 +151,7 @@
         <article>
           <div id="picto1" class="logo"></div>
           <a href="#">
-            <h4>Tienes 5 temas por decidir antes de la <strong>Reunión Trimestral II</strong>.<span>hace 3 horas</span></h4>
+            <h4>Tienes 5 temas por decidir antes de la <strong>Reunión Trimestral 2</strong>.<span>hace 3 horas</span></h4>
           </a>
         </article>
         <article>
@@ -159,7 +163,7 @@
         <article>
           <div id="picto3" class="logo"></div>
           <a href="#">
-            <h4>Añade una propuesta a la reunión <strong>Reunión II</strong>. <span>hace 16 horas</span></h4>
+            <h4>Añade una propuesta a la reunión <strong>Reunión 2</strong>. <span>hace 16 horas</span></h4>
           </a>
         </article>
       </section>
@@ -182,6 +186,7 @@
       <div class="">
         <img src="img/mano_popup.svg" alt="mano" />
         <h2>Empieza el debate antes de la reunión</h2>
+        <a href="#" id="empieza_debate">Empezar ahora</a>
       </div>
     </div
 
