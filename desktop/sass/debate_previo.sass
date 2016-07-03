@@ -91,12 +91,13 @@ header
   position: fixed
   top: 50px
   right: 0px
-  width: 77.3%
-  height: 50px
+  width: 100%
+  height: 60px
   z-index: 0
   +flex('space-between')
   background-color: $backgroundcolor
-  padding: 20px 20px 10px 20px
+  padding: 20px 20px 10px 320px
+  box-sizing: border-box
   opacity: 0
   +animate(0.5s)
 
@@ -298,8 +299,30 @@ aside
     @extend .article_common
     min-height: 80px
 
-.gmail_api_headtext
-  font-weight: 700
+    h4
+      width: 100%
+      font-size: 1.25rem
+      line-height: 1.5rem
+      font-weight: 700
+      color: $textColor
+      border-bottom: 1px solid #000
+      padding: 10px 0px
+      box-sizing: border-box
+
+    li
+      margin: auto
+      font-weight: 300
+      padding: 10px 0px
+      box-sizing: border-box
+      border-bottom: 1px solid #000
+
+      a
+        text-decoration: none
+        font-weight: 400
+        color: $linkcolor
+
+      a:hover
+        text-decoration: underline
 
 
 /* --------- Comentarios --------- */
@@ -401,3 +424,24 @@ aside
       box-sizing: border-box
       height: 150px
       +background_image('../img/grafic.svg')
+
+
+#popup_status
+  position: fixed
+  top: 0px
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 2000
+
+  div
+    position: absolute
+    top: 30%
+    left: 50%
+    @extend .article_common
+    +translate(-50%, -50%)
+
+    img
+      display: block
+      width: 50%
+      margin: 10px auto

@@ -165,10 +165,12 @@
       </section>
       <aside class="gmail_api_content">
         <article class="">
-          <h3 class="gmail_api_headtext">Reunión Pendiente</h3>
-          <p>
-            Tienes una reunión mañana a las 14:30
-          </p>
+          <h4>Actividades Recientes</h4>
+          <ul>
+            <li><a href="#">Marc</a>, <a href="#">Fran</a> y <a href="#">Olga</a> son los nuevos miembros de la comunidad</li>
+            <li>La <strong>reunión trimestral 2</strong> se celebrará el 10 de Junio.</li>
+            <li><strong>Cristina Arias</strong> ha participado en 3 debates activos. <a href="#">Lee todo los comentarios</a>.</li>
+          </ul>
         </article>
       </aside>
     </main>
@@ -176,6 +178,12 @@
     <?php include_once 'debate_prev.html' ?>
     <?php include_once 'voto.html' ?>
 
+    <div id="popup_status">
+      <div class="">
+        <img src="img/mano_popup.svg" alt="mano" />
+        <h2>Empieza el debate antes de la reunión</h2>
+      </div>
+    </div
 
   </body>
 </html>
