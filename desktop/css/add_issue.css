@@ -144,6 +144,8 @@ form {
   color: #333; }
 #add_issue_section .active-issue {
   color: #333; }
+#add_issue_section #tema2, #add_issue_section #tema3 {
+  display: none; }
 #add_issue_section article {
   display: block;
   -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);

@@ -32,16 +32,15 @@ header
       left: 0px
       width: 100%
       height: auto
-      padding-right: 20px
-      box-sizing: padding-box
+      box-sizing: border-box
       background-color: $menuprincipal
       z-index: 10000
       overflow: hidden
 
       ul
-        width: 98%
-        padding: 20px 0px
-        box-sizing: padding-box
+        width: 100%
+        padding: 20px 20px
+        box-sizing: border-box
         +flex('flex-end')
         justify-content: flex-end
 
@@ -215,7 +214,10 @@ body
       text-decoration: underline
       color: $menuprincipal
 
-    a:focus
+    .sadisable
+      font-weight: 300
+
+    .saactive
       color: $menuprincipal
       font-weight: 700
 
@@ -249,23 +251,20 @@ section
     @extend .article_common
     +flex('flex-start')
 
-    .logo1
+    .logo
       width: 4rem
       height: 4rem
-      background-image: url(../img/bubble.svg)
-      background-repeat: no-repeat
-      background-position: center
-      background-size: contain
       margin-right: 20px
 
-    .logo2
-      width: 4rem
-      height: 4rem
-      background-image: url(../img/add.svg)
-      background-repeat: no-repeat
-      background-position: center
-      background-size: contain
-      margin-right: 20px
+    #picto1
+      +background_image('../img/picto_ultimas_noticias_1.svg')
+
+    #picto2
+      +background_image('../img/picto_ultimas_noticias_2.svg')
+      margin-right: 30px
+
+    #picto3
+      +background_image('../img/picto_ultimas_noticias_3.svg')
 
     a
       text-decoration: none

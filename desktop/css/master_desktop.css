@@ -206,15 +206,14 @@ header {
       left: 0px;
       width: 100%;
       height: auto;
-      padding-right: 20px;
-      box-sizing: padding-box;
+      box-sizing: border-box;
       background-color: #e72a64;
       z-index: 10000;
       overflow: hidden; }
       header .menu .wrap_menu ul {
-        width: 98%;
-        padding: 20px 0px;
-        box-sizing: padding-box;
+        width: 100%;
+        padding: 20px 20px;
+        box-sizing: border-box;
         -webkit-display: flex;
         display: flex;
         flex-direction: row;
@@ -385,7 +384,9 @@ body {
     #third_menu li a:hover {
       text-decoration: underline;
       color: #e72a64; }
-    #third_menu li a:focus {
+    #third_menu li .sadisable {
+      font-weight: 300; }
+    #third_menu li .saactive {
       color: #e72a64;
       font-weight: 700; }
 
@@ -423,22 +424,26 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: "flex-start"; }
-    section article .logo1 {
+    section article .logo {
       width: 4rem;
       height: 4rem;
-      background-image: url(../img/bubble.svg);
+      margin-right: 20px; }
+    section article #picto1 {
+      background-image: url("../img/picto_ultimas_noticias_1.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; }
+    section article #picto2 {
+      background-image: url("../img/picto_ultimas_noticias_2.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      margin-right: 20px; }
-    section article .logo2 {
-      width: 4rem;
-      height: 4rem;
-      background-image: url(../img/add.svg);
+      margin-right: 30px; }
+    section article #picto3 {
+      background-image: url("../img/picto_ultimas_noticias_3.svg");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: contain;
-      margin-right: 20px; }
+      background-size: contain; }
     section article a {
       text-decoration: none; }
     section article a:hover {
@@ -688,6 +693,8 @@ form {
   color: #333; }
 #add_issue_section .active-issue {
   color: #333; }
+#add_issue_section #tema2, #add_issue_section #tema3 {
+  display: none; }
 #add_issue_section article {
   display: block;
   -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);

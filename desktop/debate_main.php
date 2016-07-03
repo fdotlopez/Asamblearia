@@ -45,20 +45,7 @@
 
         $('#issue0').click(function(e){
           e.preventDefault();
-          $('#third_menu').animate({
-            'opacity': '0',
-            'left':'0px',
-          }, {duration: 'fast', ease:'easeInOutExpo'});
-
-          $('.context').animate({
-            'opacity':'0'
-          }, {duration: 'fast', ease:'easeInOutExpo'}, function(){
-            $('main').animate({
-              'padding-left':'320px',
-            });
-          });
-
-          /*$('#third_menu').css({
+          $('#third_menu').css({
             'left':'0px',
             'opacity': '0'
           });
@@ -67,8 +54,7 @@
           });
           $('.context').animate({
             'opacity':'0'
-          }, {duration: 'fast', ease:'easeInOutExpo'});*/
-
+          }, {duration: 'fast', ease:'easeInOutExpo'});
 
           $('#main_debate').hide();
           $('#main_ultimas_noticias').fadeIn();
@@ -149,9 +135,9 @@
 
     <nav id="third_menu">
       <ul>
-        <li><a href="#"><h6>Actividades de excursionismo mejor organizadas</h6></a></li>
-        <li><a href="#"><h6>Reuniones con los padres mensuales y no trimestrales</h6></a></li>
-        <li><a href="#"><h6>Coordinación con los monitores de otros grupos</h6></a></li>
+        <li><a href="#"><h6 id="sub1" class="saactive">Actividades de excursionismo mejor organizadas</h6></a></li>
+        <li><a href="#"><h6 id="sub2" class="sadisable">Reuniones con los padres mensuales y no trimestrales</h6></a></li>
+        <li><a href="#"><h6 id="sub3" class="sadisable">Coordinación con los monitores de otros grupos</h6></a></li>
       </ul>
     </nav>
 
@@ -159,19 +145,19 @@
       <h2>Que ha pasado mientras no estabas</h2>
       <section>
         <article>
-          <div class="logo1"></div>
+          <div id="picto1" class="logo"></div>
           <a href="#">
             <h4>Tienes 5 temas por decidir antes de la <strong>Reunión Trimestral II</strong>.<span>hace 3 horas</span></h4>
           </a>
         </article>
         <article>
-          <div class="logo2"></div>
+          <div id="picto2" class="logo"></div>
           <a href="#">
             <h4>Tu propuesta ha generado debate. Esto es lo que se opina sobre <strong>'Habitatge per joves'</strong>.<span>hace 5 horas</span></h4>
           </a>
         </article>
         <article>
-          <div class="logo2"></div>
+          <div id="picto3" class="logo"></div>
           <a href="#">
             <h4>Añade una propuesta a la reunión <strong>Reunión II</strong>. <span>hace 16 horas</span></h4>
           </a>

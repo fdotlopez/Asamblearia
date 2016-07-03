@@ -18,16 +18,32 @@
           $('.profile ul').fadeToggle();
         });
 
+        $('.context').animate({
+          'opacity':'1'
+        }, {duration: 'fast', ease:'easeInOutExpo'});
+
         $('textarea').focus(function(){
-          $('textarea').css({
-            'height':'150px'
-          });
+          $(this).animate({
+            height:'250px'
+          }, {duration: 'fast', ease:'easeInOutQuint'});
         });
 
         $('textarea').blur(function(){
-          $('textarea').css({
-            'height':'auto'
-          });
+          $(this).animate({
+            height:'30px'
+          }, {duration: 'fast', ease:'easeInOutQuint'});
+        });
+
+        //User Interaction
+        var count=1
+        $('#anade_tema').click(function(e){
+          e.preventDefault();
+          if(count==1){
+            $('#tema2').fadeIn();
+            count=count+1
+          } else {
+            $('#tema3').fadeIn();
+          }
         });
 
       });
@@ -82,7 +98,7 @@
             <input type="text" name="issue" placeholder="Escribe aquí el tema">
             <label for="descrip">Añade una pequeña descripción</label>
             <textarea name="descrip" placeholder="Escribe aquí la descripción"></textarea>
-            <input type="submit" value="añadir">
+            <input type="submit" value="añadir" id="anade_tema">
           </form>
         </article>
       </aside>
