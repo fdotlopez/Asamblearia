@@ -23,33 +23,29 @@
         <div class="status1">
           <h4>Acta</h4>
         </div>
+        <div class="status2">
+          <h4>Acta</h4>
+        </div>
       </div>
 
       <h3>Aspectos a mejorar</h3>
+      <div class="tagline">
+        <a href="*" class="link">ver índice</a>
+      </div>
 
       <article class="box_content">
-        <h5>Descripción</h5>
-        <p>Hace tres meses se marcaron unos claros
-          objetivos para el trimestre.
-          Debemos proponer aspectos a mejorar que
-          reflejen aquellas actividades del día a día
-          que no han salido como estaba panificado o
-          que podrían mejorarse.</p>
-      </article>
-      <article class="box_content">
-        <h5>Dinámica</h5>
-        <p>Durante los 10 primeros minutos comentaremos
-          los fallos que han habido. Después, en grupos de
-          tres personas pensaréis  soluciones. Los últimos
-          15 minutos pondremos en común todas las ideas. </p>
-      </article>
-      <article class="">
-        <h4>Nota</h4>
-        <form action="#" method="post">
-          <label for="descrip">Añade una nota sobre este tema</label>
-          <textarea name="descrip" placeholder="Escribe aquí la nota"></textarea>
-          <input type="submit" value="añadir">
-        </form>
+        <h4>Decisiones tomadas</h4>
+        <h5>Aspectos a mejorar</h5>
+        <p>Se ha decidido trabajar sobre la organización
+          de las excursiones y sobre reuniones mensuales
+          con los padres. </p>
+        <h5>¿Qué día celebramos la despedida?</h5>
+        <p>Viernes 11 de junio. Votado por la mayoría.</p>
+        <h5>Revisión de los objetivos de cada grupo con
+          los monitores responsables. </h5>
+        <p>Hemos decidido trabajar sobre la coordinación
+          entre monitores y compartir las buenas
+          prácticas.</p>
       </article>
     </main>
   </body>

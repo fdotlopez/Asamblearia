@@ -810,7 +810,12 @@ form {
   clear: right;
   box-sizing: border-box;
   padding-top: 0.2rem; }
-  #acta .status1 h4 {
+#acta .status2 {
+  width: 40%;
+  float: right;
+  box-sizing: border-box;
+  opacity: 0; }
+  #acta .status2 h4 {
     font-size: 1.1rem;
     font-weight: 400; }
 #acta h3 {
@@ -821,22 +826,25 @@ form {
   font-size: 1.8rem;
   color: #333;
   width: 100%;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.25rem;
+  clear: both; }
 #acta .box_content {
   clear: both; }
   #acta .box_content h4 {
     width: 85%;
     display: block;
-    font-size: 1.25rem;
-    font-weight: 300;
-    height: inherit; }
+    font-size: 1.2rem;
+    font-weight: 700;
+    height: inherit;
+    margin-bottom: 0.5rem; }
   #acta .box_content h5 {
     font-weight: 400;
     width: 100%; }
   #acta .box_content p {
-    font-weight: 300; }
+    font-weight: 300;
+    margin-bottom: 0.5rem; }
 #acta .tagline {
-  margin-bottom: 1rem; }
+  margin-bottom: 0.8rem; }
 #acta .link {
   color: #317bbf;
   text-decoration: none;
@@ -847,5 +855,158 @@ form {
   font-size: 1.25rem; }
 #acta article:last-of-type form input[type=submit] {
   width: 100%; }
+
+.flex-box, header nav ul {
+  -webkit-display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.article_common, main article {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px; }
+
+.calltoaction, form input[type=submit] {
+  background-color: #e72a64;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 1px solid #e72a64;
+  padding: 10px 20px;
+  box-sizing: padding-box;
+  display: block;
+  cursor: pointer;
+  letter-spacing: 0.1rem; }
+
+.buttonslinks, form button {
+  padding: 0px;
+  background-color: transparent;
+  border: 0px;
+  color: #3366FF;
+  cursor: pointer;
+  text-decoration: none; }
+
+.buttonslinks:hover, form button:hover {
+  text-decoration: underline; }
+
+.h2, main h2, #propuestas h2, #propuestas h3, #propuestas article:last-of-type h4, article:last-of-type h4, #acta article:last-of-type h4 {
+  font-size: 1.8rem;
+  color: #333;
+  width: 100%;
+  padding: 10px 20px 10px 0px;
+  box-sizing: border-box; }
+
+.h3, main h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #333;
+  width: 100%; }
+
+form {
+  width: 100%;
+  -moz-placeholder-font-family: "Lato", sans-serif;
+  -moz-placeholder-color: #bbb;
+  -moz-placeholder-font-size: 1rem;
+  -moz-placeholder-font-weight: 300;
+  -ms-input-placeholder-font-family: "Lato", sans-serif;
+  -ms-input-placeholder-color: #bbb;
+  -ms-input-placeholder-font-size: 1rem;
+  -ms-input-placeholder-font-weight: 300; }
+  form label {
+    font-weight: 300;
+    display: block;
+    margin-bottom: 5px; }
+  form .introtext, form input[type=text], form textarea {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #000;
+    font-family: "Lato", sans-serif;
+    color: #333; }
+  form input[type=text] {
+    padding: 5px 5px 5px 5px;
+    width: 90%;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1rem; }
+  form textarea {
+    width: 90%;
+    padding: 5px 5px 0px 5px;
+    height: 30px;
+    margin-bottom: 40px;
+    font-size: 1.25rem;
+    font-weight: 300; }
+  form input[type=submit] {
+    margin-bottom: 10px;
+    -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
+  form input[type=submit]:hover {
+    background-color: #fff;
+    color: #e72a64;
+    border: 1px solid #e72a64; }
+  form ::-webkit-input-placeholder {
+    font-family: "Lato", sans-serif;
+    color: #bbb;
+    font-size: 1rem;
+    font-weight: 300; }
+  form ::-moz-placeholder {
+    font-family: "Lato", sans-serif;
+    color: #bbb;
+    font-size: 1rem;
+    font-weight: 300; }
+  form div {
+    margin-bottom: 10px; }
+    form div label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      padding-left: 10px; }
+  form button {
+    font-size: 1.15rem;
+    margin: 20px 0px; }
+
+#reunion2 .duracion {
+  font-weight: 300;
+  color: #878786;
+  font-size: 1rem; }
+
+div {
+  margin: 0 auto 40px auto; }
+  div .status1 {
+    border-top: 1px solid #59575e;
+    width: 60%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 0.2rem; }
+    div .status1 h4 {
+      font-size: 1.1rem;
+      font-weight: 400; }
+  div .status2 {
+    border-top: 1px solid #b6b5b4;
+    width: 40%;
+    float: right;
+    box-sizing: border-box;
+    padding-top: 0.2rem; }
+    div .status2 h4 {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: #aaa; }
+  div .box_content form div input {
+    width: 20%;
+    float: left; }
+  div .box_content form div label {
+    width: 60%;
+    float: right; }
+  div .link {
+    color: #317bbf;
+    text-decoration: none;
+    font-weight: 300; }
 
 /*# sourceMappingURL=master_mobile.css.map */
