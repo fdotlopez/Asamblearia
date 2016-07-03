@@ -35,7 +35,7 @@
 .buttonslinks:hover, form button:hover {
   text-decoration: underline; }
 
-.h2 {
+.h2, article:last-of-type h4 {
   font-size: 1.8rem;
   color: #333;
   width: 100%;
@@ -113,5 +113,67 @@ form {
   form button {
     font-size: 1.15rem;
     margin: 20px 0px; }
+
+#reunion .duracion {
+  font-weight: 300;
+  color: #878786;
+  font-size: 1rem; }
+
+div {
+  margin: 0 auto 40px auto; }
+  div .status1 {
+    border-top: 1px solid #59575e;
+    width: 60%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 0.2rem; }
+    div .status1 h4 {
+      font-size: 1.1rem;
+      font-weight: 400; }
+  div .status2 {
+    border-top: 1px solid #b6b5b4;
+    width: 40%;
+    float: right;
+    box-sizing: border-box;
+    padding-top: 0.2rem; }
+    div .status2 h4 {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: #aaa; }
+
+.box_content h4 {
+  width: 85%;
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 300;
+  height: inherit; }
+.box_content h5 {
+  font-weight: 400;
+  width: 100%; }
+.box_content p {
+  font-weight: 300; }
+
+.tagline {
+  margin-bottom: 1rem; }
+
+.link {
+  color: #317bbf;
+  text-decoration: none;
+  font-weight: 300; }
+
+span {
+  padding-right: 1rem; }
+
+.titlepage {
+  font-weight: 700;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  color: #333;
+  width: 100%; }
+
+article:last-of-type form label {
+  font-size: 1.25rem; }
+article:last-of-type form input[type=submit] {
+  width: 100%; }
 
 /*# sourceMappingURL=reunion.css.map */
