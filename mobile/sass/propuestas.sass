@@ -1,3 +1,76 @@
 @import 'common'
 
-.propuestas
+#propuestas
+
+  h2
+    @extend .h2
+    padding: 10px 20px 0px 00px
+    font-weight: 400
+
+  div
+    margin: 0 auto 40px auto
+
+    .status1
+      border-top: 1px solid #59575e
+      width: 60%
+      float: left
+      box-sizing: border-box
+      padding-top: 0.2rem
+
+      h4
+        font-size: 1.1rem
+        font-weight: 400
+
+    .status2
+      border-top: 1px solid #b6b5b4
+      width: 40%
+      float: right
+      box-sizing: border-box
+      padding-top: 0.2rem
+
+      h4
+        font-size: 1.1rem
+        font-weight: 300
+        color: $textColor_notification
+
+  h3
+    @extend .h2
+    font-size: 1.25rem
+    font-weight: 700
+    padding: 10px 0px
+    box-sizing: border-box
+
+  .box_content
+    +flex(space-between)
+    position: relative
+
+    h4
+      width: 85%
+      display: block
+      font-size: 1.25rem
+      font-weight: 300
+      height: inherit
+
+    div
+      +background_image('../img/chevron.svg')
+      background-size: 35%
+      position: absolute
+      bottom: 15px
+      right: 20px
+      width: 30px
+      height: 30px
+      padding: 0px
+      margin: 0px
+
+  article:last-of-type
+
+    h4
+      @extend .h2
+      font-size: 1rem
+
+    form
+      label
+        font-size: 1.25rem
+
+      input[type=submit]
+        width: 100%

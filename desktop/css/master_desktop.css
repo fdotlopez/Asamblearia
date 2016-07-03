@@ -243,7 +243,7 @@ header {
     header .profile ul {
       display: none;
       position: absolute;
-      right: 7.9%;
+      right: 120px;
       width: auto;
       padding: 5px 0px;
       box-sizing: padding-box; }

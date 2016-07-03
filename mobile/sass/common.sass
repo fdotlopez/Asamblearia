@@ -5,6 +5,12 @@
   flex-direction: row
   justify-content: space-around
 
+//Flex-box
+=flex($justify)
+  -webkit-display: flex
+  display: flex
+  flex-direction: row
+  justify-content: $justify
 
 //Background Image
 =background_image($url_image)
@@ -71,14 +77,6 @@ $linkcolor: #3366FF
 .buttonslinks:hover
   text-decoration: underline
 
-.span_chevron
-  +background_image('../desktop/img/chevron.svg')
-  float: right
-  display: block
-  clear: both
-  width: 2rem
-  height: 2rem
-
 //placeholder
 =placeholders($color_place, $font-size_place, $weight_place)
   ::-webkit-input-placeholder
@@ -104,11 +102,10 @@ $linkcolor: #3366FF
 
 //h3
 .h2
-  font-size: 3rem
+  font-size: 1.8rem
   color: $textColor
   width: 100%
-  margin: auto auto 5px auto
-  padding: 0px 20px 10px 00px
+  padding: 10px 20px 10px 00px
   box-sizing: border-box
 
 //h3
@@ -117,14 +114,7 @@ $linkcolor: #3366FF
   font-weight: 300
   color: $textColor
   width: 100%
-  margin: auto auto 20px auto
-  padding: 0px 20px 10px 00px
-  box-sizing: border-box
 
-.chevron
-  +background_image('../img/chevron.svg')
-  width: 2rem
-  height: 2rem
 
 //forms
 form
@@ -146,17 +136,18 @@ form
   input[type=text]
     @extend .introtext
     padding: 5px 5px 5px 5px
-    width: 80%
+    width: 90%
     display: block
     margin-bottom: 20px
     font-size: 1rem
 
   textarea
     @extend .introtext
-    width: 80%
+    width: 90%
     padding: 5px 5px 0px 5px
     height: 30px
     margin-bottom: 40px
+    font-size: 1.25rem
     font-weight: 300
 
   input[type=submit]
@@ -169,7 +160,7 @@ form
     color: $menuprincipal
     border: 1px solid $menuprincipal
 
-  +placeholders(#bbb, inherit, 300)
+  +placeholders(#bbb, 1rem, 300)
 
   div
     margin-bottom: 10px
@@ -179,14 +170,6 @@ form
       cursor: pointer
       position: relative
       padding-left: 10px
-
-    input[type=radio]
-      border-color: blue
-      border-width: 2px
-
-    input[type=radio]:checked
-      content: "\2022"
-      color: green
 
   button
     @extend .buttonslinks

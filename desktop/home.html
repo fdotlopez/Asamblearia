@@ -7,35 +7,46 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
+        $('.linked').click(function(){
+          $('.popup').fadeToggle();
+        });
+        $('.cerrar').click(function(){
+          $('.popup').fadeToggle();
+        });
+
+        $('.goto').click(function(e){
+          e.preventDefault();
+          window.location.href = "desktop/temas.php";
+        });
 
       });
     </script>
   </head>
   <body>
     <header>
-      <img src="img/logo_llarg.svg" alt="background-asamblea" />
+      <img src="desktop/img/logo_llarg.svg" alt="background-asamblea" />
     </header>
     <section>
-      <img src="img/mans-esq.svg" alt="background-asamblea" />
+      <img src="desktop/img/mans-esq.svg" alt="background-asamblea" />
       <div class="">
         <h2>PONERSE DE ACUERDO NUNCA FUE TAN FÁCIL</h2>
         <a href="#" class="registrarse">REGISTRARSE GRATIS</a>
         <p class="subcall">
-          o <a href="#">Iniciar Sesión</a>
+          o <a href="#" class="linked">Iniciar Sesión</a>
         </p>
       </div>
-      <img src="img/mans-dre.svg" alt="" />
+      <img src="desktop/img/mans-dre.svg" alt="" />
     </section>
     <section>
       <h2>Asamblearia es la primera herramienta digital
         que agiliza el proceso de la toma de decisiones en comunidad.</h2>
-      <img src="img/display_vectors.png" alt="Asamblearia-devices" />
+      <img src="desktop/img/display_vectors.png" alt="Asamblearia-devices" />
       <a href="#">VER DEMO</a>
       <p>Descubre Asamblearia en un click</p>
     </section>
     <section>
       <h2>¿Cómo funciona?</h2>
-      <img src="img/1.svg" alt="" />
+      <img src="desktop/img/1.svg" alt="" />
       <article class="">
         <h3>Reunidos en Asamblearia</h3>
         <p>
@@ -43,7 +54,7 @@
         </p>
       </article>
 
-      <img src="img/2.svg" alt="" />
+      <img src="desktop/img/2.svg" alt="" />
       <article class="">
         <h3>No hay tiempo que perder, el debate empieza ya.</h3>
         <p>
@@ -52,7 +63,7 @@
         </p>
       </article>
 
-      <img src="img/3.svg" alt="" />
+      <img src="desktop/img/3.svg" alt="" />
       <article class="">
         <h3>El equipo se reúne</h3>
         <p>
@@ -62,7 +73,7 @@
         </p>
       </article>
 
-      <img src="img/4.svg" alt="" />
+      <img src="desktop/img/4.svg" alt="" />
       <article class="">
         <h3>Lo que sucede en asamblearia vive aquí</h3>
         <p>
@@ -103,7 +114,7 @@
       <form class="" action="index.html" method="post">
         <input type="email" name="name" value="" placeholder="Ecribe aquí tu email">
         <input type="password" name="name" value="" placeholder="Ecribe aquí tu contraseña">
-        <input type="submit" name="name" value="REGISTRARSE GRATIS">
+        <input type="submit" name="name" value="REGISTRARSE GRATIS" class="goto">
       </form>
     </section>
     <footer>
@@ -117,5 +128,14 @@
         <li><a href="#">Política de privacidad</a></li>
       </ul>
     </footer>
+    <aside class="popup">
+      <a class="cerrar">Cerrar</a>
+      <h3>Iniciar Sesión</h3>
+      <form class="" action="index.html" method="post">
+        <input type="email" name="name" value="" placeholder="Ecribe aquí tu email">
+        <input type="password" name="name" value="" placeholder="Ecribe aquí tu contraseña">
+        <input type="submit" name="name" value="INICIAR SESIÓN" class="goto">
+      </form>
+    </aside>
   </body>
 </html>

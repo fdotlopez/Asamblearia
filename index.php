@@ -12,6 +12,6 @@ include_once 'mobile/propuestas.php';
 } else {
 
 //desktop version
-include_once 'desktop/temas.php';
+include_once 'desktop/home.html';
 
 } ?>

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .flex-box {
   -webkit-display: flex;
   display: flex;
@@ -36,51 +35,28 @@
 .buttonslinks:hover, form button:hover {
   text-decoration: underline; }
 
-.span_chevron {
-  background-image: url("../desktop/img/chevron.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  float: right;
-  display: block;
-  clear: both;
-  width: 2rem;
-  height: 2rem; }
-
 .h2 {
-  font-size: 3rem;
+  font-size: 1.8rem;
   color: #333;
   width: 100%;
-  margin: auto auto 5px auto;
-  padding: 0px 20px 10px 0px;
+  padding: 10px 20px 10px 0px;
   box-sizing: border-box; }
 
 .h3 {
   font-size: 2rem;
   font-weight: 300;
   color: #333;
-  width: 100%;
-  margin: auto auto 20px auto;
-  padding: 0px 20px 10px 0px;
-  box-sizing: border-box; }
-
-.chevron {
-  background-image: url("../img/chevron.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 2rem;
-  height: 2rem; }
+  width: 100%; }
 
 form {
   width: 100%;
   -moz-placeholder-font-family: "Lato", sans-serif;
   -moz-placeholder-color: #bbb;
-  -moz-placeholder-font-size: inherit;
+  -moz-placeholder-font-size: 1rem;
   -moz-placeholder-font-weight: 300;
   -ms-input-placeholder-font-family: "Lato", sans-serif;
   -ms-input-placeholder-color: #bbb;
-  -ms-input-placeholder-font-size: inherit;
+  -ms-input-placeholder-font-size: 1rem;
   -ms-input-placeholder-font-weight: 300; }
   form label {
     font-weight: 300;
@@ -95,15 +71,16 @@ form {
     color: #333; }
   form input[type=text] {
     padding: 5px 5px 5px 5px;
-    width: 80%;
+    width: 90%;
     display: block;
     margin-bottom: 20px;
     font-size: 1rem; }
   form textarea {
-    width: 80%;
+    width: 90%;
     padding: 5px 5px 0px 5px;
     height: 30px;
     margin-bottom: 40px;
+    font-size: 1.25rem;
     font-weight: 300; }
   form input[type=submit] {
     margin-bottom: 10px;
@@ -119,12 +96,12 @@ form {
   form ::-webkit-input-placeholder {
     font-family: "Lato", sans-serif;
     color: #bbb;
-    font-size: inherit;
+    font-size: 1rem;
     font-weight: 300; }
   form ::-moz-placeholder {
     font-family: "Lato", sans-serif;
     color: #bbb;
-    font-size: inherit;
+    font-size: 1rem;
     font-weight: 300; }
   form div {
     margin-bottom: 10px; }
@@ -133,12 +110,6 @@ form {
       cursor: pointer;
       position: relative;
       padding-left: 10px; }
-    form div input[type=radio] {
-      border-color: blue;
-      border-width: 2px; }
-    form div input[type=radio]:checked {
-      content: "•";
-      color: green; }
   form button {
     font-size: 1.15rem;
     margin: 20px 0px; }

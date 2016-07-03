@@ -12,19 +12,44 @@
 
     </script>
   </head>
-  <body class=".propuestas">
+  <body>
 
     <?php include_once 'head.html' ?>
 
-    <main id="dashboard">
-      <h2>TITLE HERE</h2>
-      <h3>TITLE HERE</h3>
+    <main id="propuestas">
+      <h2>Reunión Trimestral 2</h2>
+
+      <div>
+       <div class="status1">
+         <h4>Propuesta de temas</h4>
+       </div>
+       <div class="status2">
+         <h4>Debate previo</h4>
+       </div>
+      </div>
+
+      <h3>Temas Propuestos</h3>
       <article class="box_content">
-        <h4>TITLE HERE</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-        </p>
-        <div class="span_chevron"></div>
+        <h4>Aspectos a mejorar</h4>
+        <div></div>
+      </article>
+      <article class="box_content">
+        <h4>¿Qué día celebramos la despedida?</h4>
+        <div></div>
+      </article>
+      <article class="box_content">
+        <h4>Revisión de los objetivos de cada grupo con los monitores responsables</h4>
+        <div></div>
+      </article>
+      <article class="">
+        <h4>Nuevo Tema</h4>
+        <form action="#" method="post">
+          <label for="issue">Añade un tema de tu interés</label>
+          <input type="text" name="issue" placeholder="Escribe aquí el tema">
+          <label for="descrip">Añade una pequeña descripción</label>
+          <textarea name="descrip" placeholder="Escribe aquí la descripción"></textarea>
+          <input type="submit" value="añadir">
+        </form>
       </article>
     </main>
   </body>
